@@ -58,6 +58,7 @@
 <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased" data-nav-root="" data-page="services">
 <div class="relative flex min-h-screen flex-col overflow-x-hidden">
 <header id="site-header"></header>
+
 <main class="flex-grow">
 <!-- Hero Section -->
 <section class="relative w-full py-16 sm:py-32 overflow-hidden">
@@ -376,38 +377,6 @@ document.addEventListener('DOMContentLoaded', () => {
             observer.observe(el);
         }
     });
-
-    // 2. Functional Mobile Menu Overlay
-    const menuBtns = document.querySelectorAll('[data-mobile-menu-trigger], button.md\:hidden, button[class*="md:hidden"], button[class*="lg:hidden"]');
-    if(menuBtns.length > 0) {
-        const mobileMenu = document.createElement('div');
-        mobileMenu.className = 'fixed inset-0 bg-background-dark/98 backdrop-blur-2xl z-[100] flex flex-col items-center justify-center gap-8 translate-y-[-100%] transition-transform duration-500';
-        mobileMenu.innerHTML = `
-            <button class="absolute top-8 right-8 text-white p-2 hover:text-primary transition-colors" id="close-menu">
-                <span class="material-symbols-outlined text-4xl">close</span>
-            </button>
-            <a href="index.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Home</a>
-            <a href="about.html" class="text-4xl font-black text-white hover:text-primary transition-colors">About</a>
-            <a href="services.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Services</a>
-            <a href="projects.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Projects</a>
-            <a href="contact.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Contact</a>
-            <a href="tel:+2348119111728" class="mt-8 bg-primary text-background-dark px-8 py-3 rounded-full font-bold shadow-lg mt-auto">Call Us</a>
-            <a href="tel:+2347077776125" class="mt-8 bg-primary text-background-dark px-8 py-3 rounded-full font-bold shadow-lg mt-auto">Call Us</a>
-        `;
-        document.body.appendChild(mobileMenu);
-        
-        menuBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                mobileMenu.classList.remove('translate-y-[-100%]');
-                document.body.style.overflow = 'hidden';
-            });
-        });
-        
-        document.getElementById('close-menu').addEventListener('click', () => {
-            mobileMenu.classList.add('translate-y-[-100%]');
-            document.body.style.overflow = '';
-        });
-    }
 
     // 3. Premium Contact Form Handling (Toast Notification)
     // Create Toast Element

@@ -9,19 +9,8 @@
 <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#D0FF00',background:'#0F172A',surface:'#111827'}}}};</script>
 <style>body{font-family:'Inter',sans-serif}</style>
 </head>
-<body class="bg-slate-50 text-slate-900 dark:bg-background dark:text-slate-100 min-h-screen">
-<header class="border-b border-primary/20 bg-background px-6 py-5">
-<div class="max-w-6xl mx-auto flex items-center justify-between gap-6">
-<a class="text-xl font-black tracking-tight text-white uppercase" href="index.html">Fetzy Nigeria</a>
-<nav class="flex flex-wrap items-center gap-5 text-sm text-slate-300">
-<a class="hover:text-primary transition-colors" href="about.html">About</a>
-<a class="hover:text-primary transition-colors" href="services.html">Services</a>
-<a class="hover:text-primary transition-colors" href="projects.html">Projects</a>
-<a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
-<a class="hover:text-primary transition-colors" href="sitemap.html">Sitemap</a>
-</nav>
-</div>
-</header>
+<body class="bg-slate-50 text-slate-900 dark:bg-background dark:text-slate-100 min-h-screen" data-nav-root="" data-page="resources">
+<header id="site-header"></header>
 <main>
 <section class="max-w-6xl mx-auto px-6 py-20">
 <span class="text-primary font-bold uppercase tracking-[0.3em] text-xs">Fetzy Nigeria</span>
@@ -51,4 +40,7 @@
 </div>
 </div>
 </footer>
+
+
+  <script src="shared-navbar.js"></script>
 </body></html>

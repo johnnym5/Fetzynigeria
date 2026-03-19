@@ -38,29 +38,10 @@
         }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<body data-page="legal" class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
 <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
 <div class="layout-container flex h-full grow flex-col">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-6 md:px-20 lg:px-40 py-4 bg-background-light dark:bg-background-dark sticky top-0 z-50">
-<div class="flex items-center gap-4">
-<div class="text-primary">
-<svg class="w-8 h-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path clip-rule="evenodd" d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight uppercase">FETZY NIGERIA</h2>
-</div>
-<div class="flex flex-1 justify-end gap-8">
-<nav class="hidden md:flex items-center gap-9">
-<a class="text-slate-400 dark:text-slate-300 hover:text-primary transition-colors text-sm font-semibold tracking-wide" href="index.html">HOME</a>
-<a class="text-slate-400 dark:text-slate-300 hover:text-primary transition-colors text-sm font-semibold tracking-wide" href="services.html">SERVICES</a>
-<a class="text-slate-400 dark:text-slate-300 hover:text-primary transition-colors text-sm font-semibold tracking-wide" href="contact.html">CONTACT</a>
-</nav>
-<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all">
-<span class="material-symbols-outlined text-xl">search</span>
-</button>
-</div>
-</header>
+<header id="site-header"></header>
 <main class="flex-1 flex flex-col items-center py-16 px-6">
 <div class="w-full max-w-4xl flex flex-col gap-12">
 <!-- Page Header -->
@@ -292,4 +273,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
+<script src="shared-navbar.js"></script>
 </body></html>

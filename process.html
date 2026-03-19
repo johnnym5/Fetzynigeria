@@ -62,28 +62,9 @@
         }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<body data-page="process" class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
 <!-- Header Navigation -->
-<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
-<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-<div class="flex items-center gap-3">
-<div class="size-8 bg-primary rounded flex items-center justify-center text-background-dark">
-<span class="material-symbols-outlined font-bold">architecture</span>
-</div>
-<h1 class="text-xl font-black tracking-tighter uppercase">FETZY NIGERIA LIMITED</h1>
-</div>
-<nav class="hidden md:flex items-center gap-10">
-<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="projects.html">Projects</a>
-<a class="text-sm font-medium text-primary" href="process.html">Process</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">About</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
-</nav>
-<a href="contact.html"  class="bg-primary hover:bg-primary/90 text-background-dark px-6 py-2.5 rounded-lg text-sm font-bold transition-all transform hover:scale-105">
-            Get a Quote
-        </a>
-</div>
-</header>
+<header id="site-header"></header>
 <main class="min-h-screen">
 <!-- Hero Section -->
 <section class="relative pt-24 pb-16 px-6">
@@ -458,4 +439,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
+<script src="shared-navbar.js"></script>
 </body></html>

@@ -58,28 +58,9 @@
         }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<body data-page="about" class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
 <!-- Top Navigation -->
-<header class="sticky top-0 z-50 w-full border-b border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
-<div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
-<div class="flex items-center gap-3">
-<div class="text-primary">
-<span class="material-symbols-outlined text-4xl">architecture</span>
-</div>
-<h1 class="text-xl font-bold tracking-tight uppercase text-white">Fetzy Nigeria <span class="text-primary font-black">Limited</span></h1>
-</div>
-<nav class="hidden md:flex items-center gap-10">
-<a class="text-sm font-semibold hover:text-primary transition-colors text-white/90" href="index.html">Home</a>
-<a class="text-sm font-semibold text-primary transition-colors" href="about.html">About</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors text-white/90" href="projects.html">Projects</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors text-white/90" href="services.html">Services</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors text-white/90" href="contact.html">Contact</a>
-</nav>
-<a href="contact.html"  class="bg-primary hover:bg-primary/90 text-background-dark px-6 py-2.5 rounded font-bold text-sm transition-all transform hover:scale-105">
-                GET A QUOTE
-            </a>
-</div>
-</header>
+<header id="site-header"></header>
 <main>
 <!-- Hero Section -->
 <section class="relative h-[614px] flex items-end">
@@ -432,4 +413,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
+<script src="shared-navbar.js"></script>
 </body></html>

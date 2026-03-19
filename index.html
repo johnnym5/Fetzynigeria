@@ -56,36 +56,7 @@
         .stagger-4 { animation-delay: 0.4s; }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display selection:bg-primary selection:text-background-dark overflow-x-hidden">
-<header class="fixed top-0 z-50 w-full glass-nav border-b border-white/5">
-<nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-<div class="flex items-center gap-2 group cursor-pointer">
-<div class="text-primary transition-transform duration-500 group-hover:rotate-90">
-<span class="material-symbols-outlined text-3xl">architecture</span>
-</div>
-<div class="text-lg font-bold tracking-tight uppercase">Fetzy Nigeria</div>
-<h1 class="text-lg font-bold tracking-tight uppercase">FETZY NIGERIA LIMITED</h1>
-</div>
-<div class="hidden lg:flex items-center gap-8">
-<a class="text-sm font-medium hover:text-primary transition-all duration-300 relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-primary hover:after:w-full after:transition-all" href="index.html">Home</a>
-<a class="text-sm font-medium hover:text-primary transition-all duration-300" href="services.html">Services</a>
-<a class="text-sm font-medium hover:text-primary transition-all duration-300" href="projects.html">Projects</a>
-<a class="text-sm font-medium hover:text-primary transition-all duration-300" href="about.html">About</a>
-<a class="text-sm font-medium hover:text-primary transition-all duration-300" href="careers.html">Careers</a>
-<a class="text-sm font-medium hover:text-primary transition-all duration-300" href="contact.html">Contact</a>
-<a class="text-sm font-medium hover:text-primary transition-all duration-300" href="request-quote.html">Quote</a>
-</div>
-<div class="flex items-center gap-4">
-<button aria-label="Open main menu" class="flex items-center justify-center rounded-lg p-2 text-primary transition-colors hover:bg-white/10 lg:hidden" data-mobile-menu-trigger type="button">
-<span class="material-symbols-outlined">menu</span>
-</button>
-<a class="hidden sm:inline-flex bg-primary text-background-dark px-6 py-2.5 rounded-lg text-sm font-bold hover:scale-105 active:scale-95 transition-all shadow-lg shadow-primary/20" href="contact.html">
-                Get a Quote
-            </a>
-</div>
-</nav>
-</header>
-<body data-page="home" class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display selection:bg-primary selection:text-background-dark overflow-x-hidden">
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display selection:bg-primary selection:text-background-dark overflow-x-hidden" data-nav-root="" data-page="home">
 <header id="site-header"></header>
 <main>
 <!-- Hero Section -->
@@ -563,5 +534,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-<script src="shared-navbar.js"></script>
+
+
+  <script src="shared-navbar.js"></script>
 </body></html>

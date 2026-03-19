@@ -64,6 +64,31 @@
 </head>
 <body data-page="process" class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
 <!-- Header Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded flex items-center justify-center text-background-dark">
+<span class="material-symbols-outlined font-bold">architecture</span>
+</div>
+<h1 class="text-xl font-black tracking-tighter uppercase">FETZY NIGERIA LIMITED</h1>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="projects.html">Projects</a>
+<a class="text-sm font-medium text-primary" href="process.html">Process</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button aria-label="Open main menu" class="flex items-center justify-center rounded-lg p-2 text-primary transition-colors hover:bg-primary/10 md:hidden" data-mobile-menu-trigger type="button">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<a href="contact.html"  class="hidden sm:inline-flex bg-primary hover:bg-primary/90 text-background-dark px-6 py-2.5 rounded-lg text-sm font-bold transition-all transform hover:scale-105">
+            Get a Quote
+        </a>
+</div>
+</div>
+</header>
 <header id="site-header"></header>
 <main class="min-h-screen">
 <!-- Hero Section -->
@@ -385,7 +410,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 2. Functional Mobile Menu Overlay
-    const menuBtns = document.querySelectorAll('button.md\\:hidden, button[class*="md:hidden"]');
+    const menuBtns = document.querySelectorAll('[data-mobile-menu-trigger], button.md\:hidden, button[class*="md:hidden"], button[class*="lg:hidden"]');
     if(menuBtns.length > 0) {
         const mobileMenu = document.createElement('div');
         mobileMenu.className = 'fixed inset-0 bg-background-dark/98 backdrop-blur-2xl z-[100] flex flex-col items-center justify-center gap-8 translate-y-[-100%] transition-transform duration-500';

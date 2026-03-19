@@ -56,9 +56,14 @@
 <a class="text-slate-400 dark:text-slate-300 hover:text-primary transition-colors text-sm font-semibold tracking-wide" href="services.html">SERVICES</a>
 <a class="text-slate-400 dark:text-slate-300 hover:text-primary transition-colors text-sm font-semibold tracking-wide" href="contact.html">CONTACT</a>
 </nav>
-<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all">
+<div class="flex items-center gap-3">
+<button aria-label="Open main menu" class="flex items-center justify-center rounded-lg h-10 w-10 bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all md:hidden" data-mobile-menu-trigger type="button">
+<span class="material-symbols-outlined text-xl">menu</span>
+</button>
+<button class="hidden md:flex items-center justify-center rounded-lg h-10 w-10 bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all">
 <span class="material-symbols-outlined text-xl">search</span>
 </button>
+</div>
 </div>
 </header>
 <header id="site-header"></header>
@@ -246,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 2. Functional Mobile Menu Overlay
-    const menuBtns = document.querySelectorAll('button.md\\:hidden, button[class*="md:hidden"]');
+    const menuBtns = document.querySelectorAll('[data-mobile-menu-trigger], button.md\:hidden, button[class*="md:hidden"], button[class*="lg:hidden"]');
     if(menuBtns.length > 0) {
         const mobileMenu = document.createElement('div');
         mobileMenu.className = 'fixed inset-0 bg-background-dark/98 backdrop-blur-2xl z-[100] flex flex-col items-center justify-center gap-8 translate-y-[-100%] transition-transform duration-500';

@@ -6,7 +6,7 @@
 <title>Contact Us - FETZY NIGERIA LIMITED</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" /> rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -36,7 +36,7 @@
     }
 </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<body data-page="contact" class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
 <!-- Top Navigation Bar -->
 <header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/20">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -60,6 +60,7 @@
 <span class="material-symbols-outlined">menu</span>
 </button>
 <a class="hidden lg:flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all active:scale-95" href="tel:+2348119111728">
+<a class="hidden lg:flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all active:scale-95" href="tel:+2347077776125">
 <span class="material-symbols-outlined text-sm">call</span>
                         Call Now
                     </a>
@@ -67,6 +68,7 @@
 </div>
 </div>
 </header>
+<header id="site-header"></header>
 <main>
 <!-- Hero Section -->
 <section class="relative h-64 md:h-80 flex items-center justify-center overflow-hidden">
@@ -120,7 +122,7 @@
 </form>
 </div>
 <!-- Office Information & Map -->
-<div class="space-y-12">
+<div class="space-y-12" id="office-location">
 <div>
 <h3 class="text-3xl font-bold text-slate-900 dark:text-white mb-8">Our Office</h3>
 <div class="space-y-6">
@@ -136,12 +138,18 @@
 </div>
 <!-- Phone Block -->
 <a class="flex items-start gap-5 group" href="tel:+2348119111728">
+<p class="text-slate-400 dark:text-slate-300">Suite 209B, Samfa Plaza, Ndola Crescent, Wuse Zone 5, Abuja, FCT, Nigeria.</p>
+</div>
+</div>
+<!-- Phone Block -->
+<a class="flex items-start gap-5 group" href="tel:+2347077776125">
 <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0 border border-primary/20 group-hover:bg-primary group-hover:text-white transition-all">
 <span class="material-symbols-outlined">call</span>
 </div>
 <div>
 <p class="text-sm font-semibold text-slate-400 uppercase tracking-wider">Call Us</p>
 <p class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">+234-8119111728</p>
+<p class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">+234 707 777 6125</p>
 </div>
 </a>
 <!-- Email Block -->
@@ -268,6 +276,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <a href="projects.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Projects</a>
             <a href="contact.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Contact</a>
             <a href="tel:+2348119111728" class="mt-8 bg-primary text-background-dark px-8 py-3 rounded-full font-bold shadow-lg">Call Us</a>
+            <a href="tel:+2347077776125" class="mt-8 bg-primary text-background-dark px-8 py-3 rounded-full font-bold shadow-lg">Call Us</a>
         `;
         document.body.appendChild(mobileMenu);
         
@@ -313,4 +322,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
+<script src="shared-navbar.js"></script>
 </body></html>

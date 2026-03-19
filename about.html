@@ -6,7 +6,7 @@
 <title>About Us | FETZY NIGERIA LIMITED</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" /> rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -58,7 +58,7 @@
         }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<body data-page="about" class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
 <!-- Top Navigation -->
 <header class="sticky top-0 z-50 w-full border-b border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
 <div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
@@ -80,6 +80,7 @@
             </a>
 </div>
 </header>
+<header id="site-header"></header>
 <main>
 <!-- Hero Section -->
 <section class="relative h-[614px] flex items-end">
@@ -288,7 +289,7 @@
 <ul class="space-y-4 text-slate-400 text-sm">
 <li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
 <li><a class="hover:text-primary transition-colors" href="process.html">Our Process</a></li>
-<li><a class="hover:text-primary transition-colors" href="index.html">Sustainability</a></li>
+<li><a class="hover:text-primary transition-colors" href="sustainability.html">Sustainability</a></li>
 <li><a class="hover:text-primary transition-colors" href="careers.html">Careers</a></li>
 </ul>
 </div>
@@ -305,10 +306,17 @@
 <h5 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Location</h5>
 <p class="text-slate-400 text-sm mb-4">Suite 106B, Samfa Plaza, Ndola Crescent, Wuse Zone 5, Abuja-Nigeria</p>
 <div class="flex gap-4">
+<h5 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Contact</h5>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li>Suite 209B, Samfa Plaza, Ndola Crescent, Wuse Zone 5, Abuja, FCT, Nigeria.</li>
+<li>FETZYLIMITED@GMAIL.COM</li>
+<li>+234 707 777 6125</li>
+</ul>
+<div class="flex gap-4 mt-4">
 <a class="w-10 h-10 rounded bg-primary/10 border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="index.html">
 <span class="material-symbols-outlined text-xl">share</span>
 </a>
-<a class="w-10 h-10 rounded bg-primary/10 border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="index.html">
+<a class="w-10 h-10 rounded bg-primary/10 border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="mailto:FETZYLIMITED@GMAIL.COM">
 <span class="material-symbols-outlined text-xl">mail</span>
 </a>
 </div>
@@ -317,8 +325,8 @@
 <div class="border-t border-primary/10 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
 <p class="text-slate-400 text-xs">© 2024 FETZY NIGERIA LIMITED. All Rights Reserved.</p>
 <div class="flex gap-8 text-xs text-slate-400">
-<a class="hover:text-primary transition-colors" href="index.html">Privacy Policy</a>
-<a class="hover:text-primary transition-colors" href="index.html">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="legal.html#privacy">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="legal.html#terms">Terms of Service</a>
 </div>
 </div>
 </div>
@@ -386,7 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <a href="services.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Services</a>
             <a href="projects.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Projects</a>
             <a href="contact.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Contact</a>
-            <a href="tel:+2348119111728" class="mt-8 bg-primary text-background-dark px-8 py-3 rounded-full font-bold shadow-lg">Call Us</a>
+            <a href="tel:+2347077776125" class="mt-8 bg-primary text-background-dark px-8 py-3 rounded-full font-bold shadow-lg">Call Us</a>
         `;
         document.body.appendChild(mobileMenu);
         
@@ -432,4 +440,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
+<script src="shared-navbar.js"></script>
 </body></html>

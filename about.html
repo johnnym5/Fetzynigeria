@@ -6,7 +6,7 @@
 <title>About Us | FETZY NIGERIA LIMITED</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" /> rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -58,28 +58,9 @@
         }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<body data-page="about" class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
 <!-- Top Navigation -->
-<header class="sticky top-0 z-50 w-full border-b border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
-<div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
-<div class="flex items-center gap-3">
-<div class="text-primary">
-<span class="material-symbols-outlined text-4xl">architecture</span>
-</div>
-<h1 class="text-xl font-bold tracking-tight uppercase text-white">FETZY NIGERIA LIMITED</h1>
-</div>
-<nav class="hidden md:flex items-center gap-10">
-<a class="text-sm font-semibold hover:text-primary transition-colors text-white/90" href="index.html">Home</a>
-<a class="text-sm font-semibold text-primary transition-colors" href="about.html">About</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors text-white/90" href="projects.html">Projects</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors text-white/90" href="services.html">Services</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors text-white/90" href="contact.html">Contact</a>
-</nav>
-<a href="contact.html"  class="bg-primary hover:bg-primary/90 text-background-dark px-6 py-2.5 rounded font-bold text-sm transition-all transform hover:scale-105">
-                GET A QUOTE
-            </a>
-</div>
-</header>
+<header id="site-header"></header>
 <main>
 <!-- Hero Section -->
 <section class="relative h-[614px] flex items-end">
@@ -288,7 +269,7 @@
 <ul class="space-y-4 text-slate-400 text-sm">
 <li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
 <li><a class="hover:text-primary transition-colors" href="process.html">Our Process</a></li>
-<li><a class="hover:text-primary transition-colors" href="index.html">Sustainability</a></li>
+<li><a class="hover:text-primary transition-colors" href="sustainability.html">Sustainability</a></li>
 <li><a class="hover:text-primary transition-colors" href="careers.html">Careers</a></li>
 </ul>
 </div>
@@ -321,8 +302,8 @@
 <div class="border-t border-primary/10 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
 <p class="text-slate-400 text-xs">© 2024 FETZY NIGERIA LIMITED. All Rights Reserved.</p>
 <div class="flex gap-8 text-xs text-slate-400">
-<a class="hover:text-primary transition-colors" href="index.html">Privacy Policy</a>
-<a class="hover:text-primary transition-colors" href="index.html">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="legal.html#privacy">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="legal.html#terms">Terms of Service</a>
 </div>
 </div>
 </div>
@@ -436,4 +417,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
+<script src="shared-navbar.js"></script>
 </body></html>

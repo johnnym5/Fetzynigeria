@@ -336,15 +336,15 @@
                     Nigeria's premier construction partner. We define the future of architectural excellence through precision, dedication, and uncompromising quality since 2013.
                 </p>
 <div class="flex gap-4">
-<a class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all duration-300" href="index.html">
+<a aria-label="Visit Fetzy Nigeria website" class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all duration-300" href="https://fetzynigeria.org" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined">public</span>
 </a>
-<a class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all duration-300" href="index.html">
+<a aria-label="Open Fetzy Nigeria website" class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all duration-300" href="https://fetzynigeria.org" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined">language</span>
 </a>
-<a class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all duration-300" href="index.html">
+<button aria-label="Share Fetzy Nigeria" class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all duration-300" data-share-text="Explore Fetzy Nigeria's engineering and construction services." data-share-title="Fetzy Nigeria" data-share-url="https://fetzynigeria.org" type="button">
 <span class="material-symbols-outlined">share</span>
-</a>
+</button>
 </div>
 </div>
 <div>
@@ -484,6 +484,36 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
     `;
     document.body.appendChild(toast);
+
+
+    document.querySelectorAll('[data-share-url]').forEach(button => {
+        button.addEventListener('click', async () => {
+            const shareUrl = button.dataset.shareUrl;
+            const shareData = {
+                title: button.dataset.shareTitle || document.title,
+                text: button.dataset.shareText || '',
+                url: shareUrl
+            };
+
+            try {
+                if (navigator.share) {
+                    await navigator.share(shareData);
+                    return;
+                }
+
+                if (navigator.clipboard && shareUrl) {
+                    await navigator.clipboard.writeText(shareUrl);
+                    return;
+                }
+
+                window.prompt('Copy this link:', shareUrl);
+            } catch (error) {
+                if (error && error.name !== 'AbortError') {
+                    window.prompt('Copy this link:', shareUrl);
+                }
+            }
+        });
+    });
 
     const forms = document.querySelectorAll('form');
     forms.forEach(form => {

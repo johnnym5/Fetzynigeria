@@ -305,10 +305,10 @@
 <h5 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Location</h5>
 <p class="text-slate-400 text-sm mb-4">Suite 209B, Samfa Plaza, Ndola Crescent, Wuse Zone 5, Abuja, Nigeria.</p>
 <div class="flex gap-4">
-<a class="w-10 h-10 rounded bg-primary/10 border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="index.html">
+<button aria-label="Share Fetzy Nigeria location" class="w-10 h-10 rounded bg-primary/10 border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" data-share-text="Visit Fetzy Nigeria at Suite 209B, Samfa Plaza, Ndola Crescent, Wuse Zone 5, Abuja, Nigeria." data-share-title="Fetzy Nigeria Office" data-share-url="https://maps.google.com/?q=Samfa+Plaza+Ndola+Crescent+Wuse+Zone+5+Abuja" type="button">
 <span class="material-symbols-outlined text-xl">share</span>
-</a>
-<a class="w-10 h-10 rounded bg-primary/10 border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="index.html">
+</button>
+<a aria-label="Email Fetzy Nigeria" class="w-10 h-10 rounded bg-primary/10 border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="mailto:contracts@fetzynigeria.org">
 <span class="material-symbols-outlined text-xl">mail</span>
 </a>
 </div>
@@ -416,6 +416,36 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
     `;
     document.body.appendChild(toast);
+
+
+    document.querySelectorAll('[data-share-url]').forEach(button => {
+        button.addEventListener('click', async () => {
+            const shareUrl = button.dataset.shareUrl;
+            const shareData = {
+                title: button.dataset.shareTitle || document.title,
+                text: button.dataset.shareText || '',
+                url: shareUrl
+            };
+
+            try {
+                if (navigator.share) {
+                    await navigator.share(shareData);
+                    return;
+                }
+
+                if (navigator.clipboard && shareUrl) {
+                    await navigator.clipboard.writeText(shareUrl);
+                    return;
+                }
+
+                window.prompt('Copy this link:', shareUrl);
+            } catch (error) {
+                if (error && error.name !== 'AbortError') {
+                    window.prompt('Copy this link:', shareUrl);
+                }
+            }
+        });
+    });
 
     const forms = document.querySelectorAll('form');
     forms.forEach(form => {

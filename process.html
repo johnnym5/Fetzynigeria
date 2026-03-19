@@ -291,10 +291,10 @@
                     Leading construction and engineering firm in Nigeria, dedicated to building sustainable infrastructure for a better tomorrow.
                 </p>
 <div class="flex gap-4">
-<a class="size-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary/10 transition-colors" href="index.html">
+<button aria-label="Share Fetzy Nigeria process" class="size-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary/10 transition-colors" data-share-text="Learn how Fetzy Nigeria delivers construction projects." data-share-title="Fetzy Nigeria Process" data-share-url="https://fetzynigeria.org/process.html" type="button">
 <span class="material-symbols-outlined text-primary text-lg">share</span>
-</a>
-<a class="size-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary/10 transition-colors" href="index.html">
+</button>
+<a aria-label="Email Fetzy Nigeria" class="size-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary/10 transition-colors" href="mailto:contracts@fetzynigeria.org">
 <span class="material-symbols-outlined text-primary text-lg">contact_mail</span>
 </a>
 </div>
@@ -442,6 +442,36 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
     `;
     document.body.appendChild(toast);
+
+
+    document.querySelectorAll('[data-share-url]').forEach(button => {
+        button.addEventListener('click', async () => {
+            const shareUrl = button.dataset.shareUrl;
+            const shareData = {
+                title: button.dataset.shareTitle || document.title,
+                text: button.dataset.shareText || '',
+                url: shareUrl
+            };
+
+            try {
+                if (navigator.share) {
+                    await navigator.share(shareData);
+                    return;
+                }
+
+                if (navigator.clipboard && shareUrl) {
+                    await navigator.clipboard.writeText(shareUrl);
+                    return;
+                }
+
+                window.prompt('Copy this link:', shareUrl);
+            } catch (error) {
+                if (error && error.name !== 'AbortError') {
+                    window.prompt('Copy this link:', shareUrl);
+                }
+            }
+        });
+    });
 
     const forms = document.querySelectorAll('form');
     forms.forEach(form => {

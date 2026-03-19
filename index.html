@@ -5,7 +5,6 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>FETZY NIGERIA LIMITED | Building Excellence, Delivered on Time</title>
 <meta content="Building excellence, delivered on time. Premium architectural and construction solutions by FETZY NIGERIA LIMITED." name="description"/>
-<meta content="Building excellence through premium architectural and construction solutions by Fetzy Nigeria Limited." name="description"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
@@ -55,6 +54,14 @@
         .stagger-3 { animation-delay: 0.3s; }
         .stagger-4 { animation-delay: 0.4s; }
     </style>
+<!-- PREMIUM FRONTEND POLISH INJECTIONS -->
+<style>
+    html { scroll-behavior: smooth; }
+    .premium-hide { opacity: 0; transform: translateY(40px); transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1); }
+    .premium-show { opacity: 1; transform: translateY(0); }
+    #premium-toast { transform: translateY(150%); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+    #premium-toast.show { transform: translateY(0); }
+</style>
 </head>
 <body data-page="home" class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display selection:bg-primary selection:text-background-dark overflow-x-hidden">
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display selection:bg-primary selection:text-background-dark overflow-x-hidden" data-nav-root="" data-page="home">
@@ -392,11 +399,16 @@
 <span class="text-[9px] text-slate-400 uppercase tracking-widest font-bold">Project Inquiry</span>
 <span class="text-sm font-bold text-white">Call Abuja HQ</span>
 </div>
+<div class="flex flex-wrap items-center gap-3">
 <a class="bg-primary text-background-dark px-6 py-3 rounded-xl text-xs font-black flex items-center gap-2 active:scale-95 transition-transform" href="tel:+2348119111728">
-<a class="bg-primary text-background-dark px-6 py-3 rounded-xl text-xs font-black flex items-center gap-2 active:scale-95 transition-transform" href="tel:+2347077776125">
 <span class="material-symbols-outlined text-sm">call</span>
-            Dial Now
+            Call Abuja HQ
         </a>
+<a class="border border-white/15 px-6 py-3 rounded-xl text-xs font-black flex items-center gap-2 text-white active:scale-95 transition-transform hover:border-primary/60" href="tel:+2347077776125">
+<span class="material-symbols-outlined text-sm">support_agent</span>
+            Call Alternate Line
+        </a>
+</div>
 </div>
 </div>
 <script>
@@ -417,14 +429,6 @@
 </script>
 
 
-<!-- PREMIUM FRONTEND POLISH INJECTIONS -->
-<style>
-    html { scroll-behavior: smooth; }
-    .premium-hide { opacity: 0; transform: translateY(40px); transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1); }
-    .premium-show { opacity: 1; transform: translateY(0); }
-    #premium-toast { transform: translateY(150%); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
-    #premium-toast.show { transform: translateY(0); }
-</style>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Premium Scroll Animations (Intersection Observer)

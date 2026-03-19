@@ -57,6 +57,14 @@
             transform: translateY(0);
         }
     </style>
+<!-- PREMIUM FRONTEND POLISH INJECTIONS -->
+<style>
+    html { scroll-behavior: smooth; }
+    .premium-hide { opacity: 0; transform: translateY(40px); transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1); }
+    .premium-show { opacity: 1; transform: translateY(0); }
+    #premium-toast { transform: translateY(150%); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+    #premium-toast.show { transform: translateY(0); }
+</style>
 </head>
 <body data-page="about" class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased" data-nav-root="" data-page="about">
@@ -66,7 +74,7 @@
 <!-- Hero Section -->
 <section class="relative h-[614px] flex items-end">
 <div class="absolute inset-0 z-0">
-<img loading="lazy" class="w-full h-full object-cover grayscale opacity-40" data-alt="Modern high-rise building architectural blueprint and steel structure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0A8ldi5yjfoQJTsReWqtY6w-udKK89agU-26AX_H1vCWD6dPFH8csj8yoaGHuEJ3BeNuL48CvQE9J1It0aA09u7SlQC44RiGSNnr3BldNRCrZ-Sg4WKRQsUmzfeeWT5cifOOAAl3gmAdMsRSdpa6nG_p-_hvMRdfGfsCsrOVXZ5XCi3ibKGi671HKdUycwlX1TZfQGII-U7Fr59XD5H3SoPN3y9P50GndDmGY1zzGDqkl7fNvl9syEaZ9T0xR-WMJPnwBJ23lNKM"/>
+<img loading="lazy" class="w-full h-full object-cover grayscale opacity-40" alt="Modern high-rise building architectural blueprint and steel structure" data-alt="Modern high-rise building architectural blueprint and steel structure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0A8ldi5yjfoQJTsReWqtY6w-udKK89agU-26AX_H1vCWD6dPFH8csj8yoaGHuEJ3BeNuL48CvQE9J1It0aA09u7SlQC44RiGSNnr3BldNRCrZ-Sg4WKRQsUmzfeeWT5cifOOAAl3gmAdMsRSdpa6nG_p-_hvMRdfGfsCsrOVXZ5XCi3ibKGi671HKdUycwlX1TZfQGII-U7Fr59XD5H3SoPN3y9P50GndDmGY1zzGDqkl7fNvl9syEaZ9T0xR-WMJPnwBJ23lNKM"/>
 <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/60 to-transparent"></div>
 </div>
 <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pb-20 w-full">
@@ -111,7 +119,7 @@
 </div>
 </div>
 <div class="relative group">
-<img loading="lazy" class="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700 w-full" data-alt="Nigerian professional team collaborating on-site" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrUm1M66mK9cLym6qRoZtMnhhsaveHbksIMsZK8zDmSuamikkIs_grBoSs4yKP3bwWEBYYYBsk87-G5qgvwCM2lIxqxZWzyynUcMSNM5HoAqidVuUVTFZnL6ffmFClc8u4H9bVMTPIW4_ix5I44IKkSYgrKf--elnVUetNFMmkDWqikOxqVwE5fxByA2znzo348TI9eSn78hxseghkPzbpsv_DVRQydNO3hHV0wgx3uyAGkbZypA4XSUP50-tA8DhIIgtjbuZWs90"/>
+<img loading="lazy" class="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700 w-full" alt="Nigerian professional team collaborating on-site" data-alt="Nigerian professional team collaborating on-site" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrUm1M66mK9cLym6qRoZtMnhhsaveHbksIMsZK8zDmSuamikkIs_grBoSs4yKP3bwWEBYYYBsk87-G5qgvwCM2lIxqxZWzyynUcMSNM5HoAqidVuUVTFZnL6ffmFClc8u4H9bVMTPIW4_ix5I44IKkSYgrKf--elnVUetNFMmkDWqikOxqVwE5fxByA2znzo348TI9eSn78hxseghkPzbpsv_DVRQydNO3hHV0wgx3uyAGkbZypA4XSUP50-tA8DhIIgtjbuZWs90"/>
 <div class="absolute -bottom-10 -left-10 bg-primary p-10 hidden xl:block shadow-2xl">
 <span class="block text-5xl font-black text-background-dark">10+</span>
 <span class="block text-xs font-bold text-background-dark tracking-widest uppercase">Years of Impact</span>
@@ -139,9 +147,6 @@
 <p class="text-2xl font-bold text-primary md:hidden">2013</p>
 <h3 class="text-xl font-bold text-white">Incorporation</h3>
 <p class="text-slate-400">Fetzy Nigeria Limited was officially incorporated, beginning its journey as a boutique engineering firm in Lagos.</p>
-<h4 class="text-2xl font-bold text-primary md:hidden">2013</h4>
-<h5 class="text-xl font-bold text-white">Incorporation</h5>
-<p class="text-slate-400">FETZY NIGERIA LIMITED was officially incorporated, beginning its journey as a boutique engineering firm in Lagos.</p>
 </div>
 </div>
 <!-- Item 2 -->
@@ -188,7 +193,7 @@
 <!-- Team Member 1 -->
 <div class="group">
 <div class="aspect-[4/5] bg-slate-800 rounded-xl overflow-hidden mb-6 relative">
-<img loading="lazy" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Engr. Femi Taiwo - African Male Executive" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWXtG7T-OSWrbCLvCUcKE3QyysM3emffI0rZLEYzeaHWlLt2Xpzv9imIYXDJOfxwTuHtrzHB6Xhr4QZ4kCxKP7YMDo1f9NOeNZvcHTAyG3sM-hk8fuUUb7ESJ_MiLRVNi_FQBt62uL4NYp42qFn3JDVDKSCCFpJ9UtrbiWrFylVrb3RJo6ZqcLQpvK5hiVT5V488ytIZohqwWcG_y7YUC66aT9yxBmJ5m265hA0FU3X0ldB4Tu8jr49xO_Bx-xO6aoia6ISpJ7msw"/>
+<img loading="lazy" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Engr. Femi Taiwo - African Male Executive" data-alt="Engr. Femi Taiwo - African Male Executive" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWXtG7T-OSWrbCLvCUcKE3QyysM3emffI0rZLEYzeaHWlLt2Xpzv9imIYXDJOfxwTuHtrzHB6Xhr4QZ4kCxKP7YMDo1f9NOeNZvcHTAyG3sM-hk8fuUUb7ESJ_MiLRVNi_FQBt62uL4NYp42qFn3JDVDKSCCFpJ9UtrbiWrFylVrb3RJo6ZqcLQpvK5hiVT5V488ytIZohqwWcG_y7YUC66aT9yxBmJ5m265hA0FU3X0ldB4Tu8jr49xO_Bx-xO6aoia6ISpJ7msw"/>
 </div>
 <h3 class="text-lg font-bold text-white">Engr. Femi Taiwo</h3>
 <p class="text-primary text-sm font-medium mb-3">CEO &amp; Principal Partner</p>
@@ -197,7 +202,7 @@
 <!-- Team Member 2 -->
 <div class="group">
 <div class="aspect-[4/5] bg-slate-800 rounded-xl overflow-hidden mb-6 relative">
-<img loading="lazy" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Adesua Okonjo - African Female Project Manager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkFfiPJm-WQ4amGAOk5-zVvuF2cug4mNiVBYRWiGGL8Y7hBeYDxxBAzs9G85h1K4hOXIR7Kvy8EunUhBmh4dtNkVs-y12QzuqNszLMjDglgSOQDNsuoTI5G4T57TEWVBLWrTFaGCqSWc_KmlqGKYFT3-auSiWpylrOxxrM2PGffBlYrBzLWF59xQDQDW07zPhj2MzH4oy-YT4gKlJl6LySIFoWrzK-bwt3N99ComseV1niSMMXbvCgte7gZXkORaAmP6uBA82Kgyo"/>
+<img loading="lazy" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Adesua Okonjo - African Female Project Manager" data-alt="Adesua Okonjo - African Female Project Manager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkFfiPJm-WQ4amGAOk5-zVvuF2cug4mNiVBYRWiGGL8Y7hBeYDxxBAzs9G85h1K4hOXIR7Kvy8EunUhBmh4dtNkVs-y12QzuqNszLMjDglgSOQDNsuoTI5G4T57TEWVBLWrTFaGCqSWc_KmlqGKYFT3-auSiWpylrOxxrM2PGffBlYrBzLWF59xQDQDW07zPhj2MzH4oy-YT4gKlJl6LySIFoWrzK-bwt3N99ComseV1niSMMXbvCgte7gZXkORaAmP6uBA82Kgyo"/>
 </div>
 <h3 class="text-lg font-bold text-white">Adesua Okonjo</h3>
 <p class="text-primary text-sm font-medium mb-3">Director of Operations</p>
@@ -206,7 +211,7 @@
 <!-- Team Member 3 -->
 <div class="group">
 <div class="aspect-[4/5] bg-slate-800 rounded-xl overflow-hidden mb-6 relative">
-<img loading="lazy" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Chidi Nwosu - African Male Architect" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7xjzf4T6eA6z4TZDBWY5DYaY0NjAG1mxfMSB26Pb0F1rD5H84Utznzkg8aWP3UVIVexy6jkWP9BqWrk1xlAl0JFZm_D9Y_BKEt3r1mHjV3A94U1ISfplgJaOkntlll_kQmTu5u5dK167X8Sz4OkRWtqnr6O2v64UVGZnztplUkVfRf9C_Z-9a9Th3olXf21p7yD41o6w75LdCjlOPqeeWJBu04BbvYgN6cPwm5rQwK6IdrlSSfD6nwKwcr3umUnaws1gD5dXSZaA"/>
+<img loading="lazy" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Chidi Nwosu - African Male Architect" data-alt="Chidi Nwosu - African Male Architect" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7xjzf4T6eA6z4TZDBWY5DYaY0NjAG1mxfMSB26Pb0F1rD5H84Utznzkg8aWP3UVIVexy6jkWP9BqWrk1xlAl0JFZm_D9Y_BKEt3r1mHjV3A94U1ISfplgJaOkntlll_kQmTu5u5dK167X8Sz4OkRWtqnr6O2v64UVGZnztplUkVfRf9C_Z-9a9Th3olXf21p7yD41o6w75LdCjlOPqeeWJBu04BbvYgN6cPwm5rQwK6IdrlSSfD6nwKwcr3umUnaws1gD5dXSZaA"/>
 </div>
 <h3 class="text-lg font-bold text-white">Chidi Nwosu</h3>
 <p class="text-primary text-sm font-medium mb-3">Head Architect</p>
@@ -215,7 +220,7 @@
 <!-- Team Member 4 -->
 <div class="group">
 <div class="aspect-[4/5] bg-slate-800 rounded-xl overflow-hidden mb-6 relative">
-<img loading="lazy" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Sarah Bello - African Female Sustainability Lead" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw9n1S-DyeAsvpYa4b4nOs62hFf7e0O4RGCRRBFDIDyPm-fLE9jHFKhtVK_8J0Z-EtsGOFEBKCTzLEblIN8yTrEV9taO9fQgXqP4MWUJ3Y8klThiPYIY_67QRKznUJo8fy2mvTE_WabBVw2sJBFWG82uwr5LFoOcMRq3-A50u4b8q4tVCUYOmr-Oo2-RJTrp_uI4PAPwtzEQygoMVXMLwCSV0EOv7CR-xzKc-iMh2YKx9ioMrTSiWO3Tuduw86QzLZgagpc8Ld01M"/>
+<img loading="lazy" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Sarah Bello - African Female Sustainability Lead" data-alt="Sarah Bello - African Female Sustainability Lead" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw9n1S-DyeAsvpYa4b4nOs62hFf7e0O4RGCRRBFDIDyPm-fLE9jHFKhtVK_8J0Z-EtsGOFEBKCTzLEblIN8yTrEV9taO9fQgXqP4MWUJ3Y8klThiPYIY_67QRKznUJo8fy2mvTE_WabBVw2sJBFWG82uwr5LFoOcMRq3-A50u4b8q4tVCUYOmr-Oo2-RJTrp_uI4PAPwtzEQygoMVXMLwCSV0EOv7CR-xzKc-iMh2YKx9ioMrTSiWO3Tuduw86QzLZgagpc8Ld01M"/>
 </div>
 <h3 class="text-lg font-bold text-white">Sarah Bello</h3>
 <p class="text-primary text-sm font-medium mb-3">Sustainability Lead</p>
@@ -249,7 +254,7 @@
 </ul>
 </div>
 <div class="lg:w-1/2 relative min-h-[400px]">
-<img loading="lazy" class="absolute inset-0 w-full h-full object-cover" data-alt="African construction team in high-vis vests" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy4Pr9Hz9HP36cVcl3qpsHRR4zg69gWODj2fqL-aA6mUNjvhaDS4wqYuaIEFAyz2H6lo_z8ScvaNT0JbMiqVErfu8GlPU8MREz9jFtxqhTHLMhBbAKkFmeQdpXif3kc6gNwrYRdHfufFhYK2R09kXkyl0vmiiIG7zjtFS2HoHVkFQ5R4a1uGHdQKe9dnTH08zUTEko2RNOKEGfebnm4DaKcv4Gnzf9RIRqrokewp7hClEn8HuHmFl12WWPCXMxij5EEj0Y4teeVss"/>
+<img loading="lazy" class="absolute inset-0 w-full h-full object-cover" alt="African construction team in high-vis vests" data-alt="African construction team in high-vis vests" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy4Pr9Hz9HP36cVcl3qpsHRR4zg69gWODj2fqL-aA6mUNjvhaDS4wqYuaIEFAyz2H6lo_z8ScvaNT0JbMiqVErfu8GlPU8MREz9jFtxqhTHLMhBbAKkFmeQdpXif3kc6gNwrYRdHfufFhYK2R09kXkyl0vmiiIG7zjtFS2HoHVkFQ5R4a1uGHdQKe9dnTH08zUTEko2RNOKEGfebnm4DaKcv4Gnzf9RIRqrokewp7hClEn8HuHmFl12WWPCXMxij5EEj0Y4teeVss"/>
 </div>
 </div>
 </div>
@@ -297,6 +302,10 @@
 <span class="material-symbols-outlined text-xl">share</span>
 </button>
 <a aria-label="Email Fetzy Nigeria" class="w-10 h-10 rounded bg-primary/10 border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="mailto:contracts@fetzynigeria.org">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+<div>
 <h5 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Contact</h5>
 <ul class="space-y-4 text-slate-400 text-sm">
 <li>Suite 209B, Samfa Plaza, Ndola Crescent, Wuse Zone 5, Abuja, FCT, Nigeria.</li>
@@ -310,6 +319,7 @@
 <a class="w-10 h-10 rounded bg-primary/10 border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="mailto:FETZYLIMITED@GMAIL.COM">
 <span class="material-symbols-outlined text-xl">mail</span>
 </a>
+</div>
 </div>
 </div>
 </div>
@@ -345,14 +355,6 @@
     </script>
 
 
-<!-- PREMIUM FRONTEND POLISH INJECTIONS -->
-<style>
-    html { scroll-behavior: smooth; }
-    .premium-hide { opacity: 0; transform: translateY(40px); transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1); }
-    .premium-show { opacity: 1; transform: translateY(0); }
-    #premium-toast { transform: translateY(150%); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
-    #premium-toast.show { transform: translateY(0); }
-</style>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Premium Scroll Animations (Intersection Observer)

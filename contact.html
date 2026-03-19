@@ -59,6 +59,7 @@
 <button class="md:hidden p-2 text-slate-400 dark:text-slate-300">
 <span class="material-symbols-outlined">menu</span>
 </button>
+<a class="hidden lg:flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all active:scale-95" href="tel:+2348119111728">
 <a class="hidden lg:flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all active:scale-95" href="tel:+2347077776125">
 <span class="material-symbols-outlined text-sm">call</span>
                         Call Now
@@ -97,7 +98,7 @@
 </div>
 <div class="flex flex-col gap-2">
 <label class="text-sm font-semibold text-slate-700 dark:text-slate-300" for="email">Email Address</label>
-<input class="w-full bg-slate-50 dark:bg-background-dark border border-slate-300 dark:border-primary/30 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all dark:text-white placeholder-slate-400" id="email" placeholder="john@example.com" required="" type="email"/>
+<input class="w-full bg-slate-50 dark:bg-background-dark border border-slate-300 dark:border-primary/30 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all dark:text-white placeholder-slate-400" id="email" placeholder="info@fetzynigeria.org" required="" type="email"/>
 </div>
 </div>
 <div class="flex flex-col gap-2">
@@ -132,6 +133,11 @@
 </div>
 <div>
 <p class="text-lg font-bold text-slate-900 dark:text-white">Abuja Headquarters</p>
+<p class="text-slate-400 dark:text-slate-300">Suite 106B, Samfa Plaza, Ndola Crescent, Wuse Zone 5, Abuja-Nigeria</p>
+</div>
+</div>
+<!-- Phone Block -->
+<a class="flex items-start gap-5 group" href="tel:+2348119111728">
 <p class="text-slate-400 dark:text-slate-300">Suite 209B, Samfa Plaza, Ndola Crescent, Wuse Zone 5, Abuja, FCT, Nigeria.</p>
 </div>
 </div>
@@ -142,17 +148,18 @@
 </div>
 <div>
 <p class="text-sm font-semibold text-slate-400 uppercase tracking-wider">Call Us</p>
+<p class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">+234-8119111728</p>
 <p class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">+234 707 777 6125</p>
 </div>
 </a>
 <!-- Email Block -->
-<a class="flex items-start gap-5 group" href="mailto:FETZYLIMITED@GMAIL.COM">
+<a class="flex items-start gap-5 group" href="mailto:info@fetzynigeria.org">
 <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0 border border-primary/20 group-hover:bg-primary group-hover:text-white transition-all">
 <span class="material-symbols-outlined">mail</span>
 </div>
 <div>
 <p class="text-sm font-semibold text-slate-400 uppercase tracking-wider">Email Us</p>
-<p class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">FETZYLIMITED@GMAIL.COM</p>
+<p class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">info@fetzynigeria.org</p>
 </div>
 </a>
 </div>
@@ -163,10 +170,10 @@
 </iframe>
 <div class="absolute bottom-4 right-4 pointer-events-none group-hover:opacity-0 transition-opacity">
 <div class="bg-background-dark/80 backdrop-blur-md px-4 py-2 rounded-lg border border-primary/30 text-xs text-white">
-                            Wuse Zone 5, Abuja
+                            Suite 106B, Samfa Plaza, Ndola Crescent, Wuse Zone 5, Abuja-Nigeria
                         </div>
 </div>
-<a class="absolute inset-0 bg-transparent flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity bg-background-dark/20 backdrop-blur-[2px]" href="https://maps.google.com/?q=Samfa+Plaza+Ndola+Crescent+Wuse+Zone+5+Abuja" target="_blank">
+<a class="absolute inset-0 bg-transparent flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity bg-background-dark/20 backdrop-blur-[2px]" href="https://maps.google.com/?q=Suite+106B+Samfa+Plaza+Ndola+Crescent+Wuse+Zone+5+Abuja-Nigeria" target="_blank">
 <span class="bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-xl flex items-center gap-2">
 <span class="material-symbols-outlined text-sm">open_in_new</span>
                             Open in Google Maps
@@ -268,6 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <a href="services.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Services</a>
             <a href="projects.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Projects</a>
             <a href="contact.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Contact</a>
+            <a href="tel:+2348119111728" class="mt-8 bg-primary text-background-dark px-8 py-3 rounded-full font-bold shadow-lg">Call Us</a>
             <a href="tel:+2347077776125" class="mt-8 bg-primary text-background-dark px-8 py-3 rounded-full font-bold shadow-lg">Call Us</a>
         `;
         document.body.appendChild(mobileMenu);

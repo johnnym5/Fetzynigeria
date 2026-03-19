@@ -54,6 +54,14 @@
         .stagger-4 { animation-delay: 0.4s; }
         .stagger-5 { animation-delay: 0.5s; }
     </style>
+<!-- PREMIUM FRONTEND POLISH INJECTIONS -->
+<style>
+    html { scroll-behavior: smooth; }
+    .premium-hide { opacity: 0; transform: translateY(40px); transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1); }
+    .premium-show { opacity: 1; transform: translateY(0); }
+    #premium-toast { transform: translateY(150%); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+    #premium-toast.show { transform: translateY(0); }
+</style>
 </head>
 <body data-page="services" class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
 <div class="relative flex min-h-screen flex-col overflow-x-hidden">
@@ -114,11 +122,14 @@
 <p class="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
     Sustainable residential and commercial architecture designed for the future of Nigerian urban centers.
 </p>
-<a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all" href="#building-construction">
-    Explore building construction <span class="material-symbols-outlined text-sm">arrow_forward</span>
+<div class="flex flex-wrap items-center gap-4">
 <a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all" href="#building-construction-details">
-    View Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    View details <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
+<a class="flex items-center gap-2 text-slate-500 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#services-overview">
+    Back to overview <span class="material-symbols-outlined text-sm">arrow_upward</span>
+</a>
+</div>
 </div>
 <!-- Road Construction -->
 <div class="service-card opacity-0 animate-fade-up stagger-2 group relative bg-slate-100 dark:bg-slate-900/50 p-8 rounded-xl border border-transparent hover:border-primary/40" id="road-construction">
@@ -130,11 +141,14 @@
 <p class="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
     Enduring road networks and heavy-duty pavement solutions optimized for local climate and heavy logistics.
 </p>
-<a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all" href="#road-construction">
-    Explore road construction <span class="material-symbols-outlined text-sm">arrow_forward</span>
+<div class="flex flex-wrap items-center gap-4">
 <a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all" href="#road-construction-details">
-    View Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    View details <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
+<a class="flex items-center gap-2 text-slate-500 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#services-overview">
+    Back to overview <span class="material-symbols-outlined text-sm">arrow_upward</span>
+</a>
+</div>
 </div>
 <!-- Real Estate -->
 <div class="service-card opacity-0 animate-fade-up stagger-3 group relative bg-slate-100 dark:bg-slate-900/50 p-8 rounded-xl border border-transparent hover:border-primary/40" id="real-estate">
@@ -146,11 +160,14 @@
 <p class="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
     Strategic property development and high-yield real estate investments in Nigeria's prime locations.
 </p>
-<a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all" href="#real-estate">
-    Explore real estate <span class="material-symbols-outlined text-sm">arrow_forward</span>
+<div class="flex flex-wrap items-center gap-4">
 <a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all" href="#real-estate-development-details">
-    View Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    View details <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
+<a class="flex items-center gap-2 text-slate-500 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#services-overview">
+    Back to overview <span class="material-symbols-outlined text-sm">arrow_upward</span>
+</a>
+</div>
 </div>
 <!-- Supply of General Goods -->
 <div class="service-card opacity-0 animate-fade-up stagger-4 group relative bg-slate-100 dark:bg-slate-900/50 p-8 rounded-xl border border-transparent hover:border-primary/40" id="procurement-logistics">
@@ -162,11 +179,14 @@
 <p class="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
     Agile supply chain management for industrial materials and specialized equipment nationwide.
 </p>
-<a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all" href="#procurement-logistics">
-    Explore procurement &amp; logistics <span class="material-symbols-outlined text-sm">arrow_forward</span>
+<div class="flex flex-wrap items-center gap-4">
 <a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all" href="#procurement-logistics-details">
-    View Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    View details <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
+<a class="flex items-center gap-2 text-slate-500 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#services-overview">
+    Back to overview <span class="material-symbols-outlined text-sm">arrow_upward</span>
+</a>
+</div>
 </div>
 <!-- General Contract -->
 <div class="service-card opacity-0 animate-fade-up stagger-5 group relative bg-slate-100 dark:bg-slate-900/50 p-8 rounded-xl border border-transparent hover:border-primary/40 " id="general-contracting">
@@ -178,10 +198,12 @@
     <p class="text-slate-400 text-sm leading-relaxed flex-grow">
         Comprehensive project management from conceptualization to commissioning. We bring accountability and technical precision to diverse public and private sector projects.
     </p>
-<a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all mt-auto" href="#general-contracting">
-        Explore general contracting <span class="material-symbols-outlined text-sm">arrow_forward</span>
-<a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all mt-auto" href="#general-contracting-details">
-        View Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+<div class="mt-auto flex flex-wrap items-center gap-4">
+<a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all" href="#general-contracting-details">
+        View details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="flex items-center gap-2 text-slate-500 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#services-overview">
+        Back to overview <span class="material-symbols-outlined text-sm">arrow_upward</span>
 </a>
 </div>
 </div>
@@ -195,27 +217,27 @@
 <p class="text-slate-400 leading-relaxed">Each service card now leads to a matching section on this page so visitors can jump directly to the capability that fits their project.</p>
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-<article class="rounded-2xl border border-primary/20 bg-white dark:bg-slate-900/40 p-8 scroll-mt-28" id="building-construction">
+<article class="rounded-2xl border border-primary/20 bg-white dark:bg-slate-900/40 p-8 scroll-mt-28" id="building-construction-jump">
 <h4 class="text-2xl font-bold mb-3">Building Construction</h4>
 <p class="text-slate-400 mb-6">We deliver residential, commercial, and mixed-use developments with a focus on durability, sustainability, and efficient site coordination.</p>
 <a class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all" href="#services-overview">Back to services overview <span class="material-symbols-outlined text-sm">arrow_upward</span></a>
 </article>
-<article class="rounded-2xl border border-primary/20 bg-white dark:bg-slate-900/40 p-8 scroll-mt-28" id="road-construction">
+<article class="rounded-2xl border border-primary/20 bg-white dark:bg-slate-900/40 p-8 scroll-mt-28" id="road-construction-jump">
 <h4 class="text-2xl font-bold mb-3">Road Construction</h4>
 <p class="text-slate-400 mb-6">Our roadworks teams handle route preparation, drainage integration, pavement systems, and long-life finishing built for heavy transport corridors.</p>
 <a class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all" href="#services-overview">Back to services overview <span class="material-symbols-outlined text-sm">arrow_upward</span></a>
 </article>
-<article class="rounded-2xl border border-primary/20 bg-white dark:bg-slate-900/40 p-8 scroll-mt-28" id="real-estate">
+<article class="rounded-2xl border border-primary/20 bg-white dark:bg-slate-900/40 p-8 scroll-mt-28" id="real-estate-development-jump">
 <h4 class="text-2xl font-bold mb-3">Real Estate</h4>
 <p class="text-slate-400 mb-6">From land acquisition strategy to turnkey property development, we help clients unlock value in high-growth residential and commercial markets.</p>
 <a class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all" href="#services-overview">Back to services overview <span class="material-symbols-outlined text-sm">arrow_upward</span></a>
 </article>
-<article class="rounded-2xl border border-primary/20 bg-white dark:bg-slate-900/40 p-8 scroll-mt-28" id="procurement-logistics">
+<article class="rounded-2xl border border-primary/20 bg-white dark:bg-slate-900/40 p-8 scroll-mt-28" id="procurement-logistics-jump">
 <h4 class="text-2xl font-bold mb-3">Procurement &amp; Logistics</h4>
 <p class="text-slate-400 mb-6">We coordinate sourcing, supply scheduling, and nationwide delivery for project-critical materials, machinery, and operational support items.</p>
 <a class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all" href="#services-overview">Back to services overview <span class="material-symbols-outlined text-sm">arrow_upward</span></a>
 </article>
-<article class="rounded-2xl border border-primary/20 bg-white dark:bg-slate-900/40 p-8 scroll-mt-28 lg:col-span-2" id="general-contracting">
+<article class="rounded-2xl border border-primary/20 bg-white dark:bg-slate-900/40 p-8 scroll-mt-28 lg:col-span-2" id="general-contracting-jump">
 <h4 class="text-2xl font-bold mb-3">General Contracting</h4>
 <p class="text-slate-400 mb-6">We provide end-to-end execution oversight, subcontractor coordination, cost control, and quality assurance for public and private infrastructure programs.</p>
 <a class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all" href="contact.html">Contact us about this service <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
@@ -378,14 +400,6 @@
 </div>
 
 
-<!-- PREMIUM FRONTEND POLISH INJECTIONS -->
-<style>
-    html { scroll-behavior: smooth; }
-    .premium-hide { opacity: 0; transform: translateY(40px); transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1); }
-    .premium-show { opacity: 1; transform: translateY(0); }
-    #premium-toast { transform: translateY(150%); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
-    #premium-toast.show { transform: translateY(0); }
-</style>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Premium Scroll Animations (Intersection Observer)

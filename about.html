@@ -75,9 +75,14 @@
 <a class="text-sm font-semibold hover:text-primary transition-colors text-white/90" href="services.html">Services</a>
 <a class="text-sm font-semibold hover:text-primary transition-colors text-white/90" href="contact.html">Contact</a>
 </nav>
-<a href="contact.html"  class="bg-primary hover:bg-primary/90 text-background-dark px-6 py-2.5 rounded font-bold text-sm transition-all transform hover:scale-105">
+<div class="flex items-center gap-4">
+<button aria-label="Open main menu" class="flex items-center justify-center rounded-lg p-2 text-primary transition-colors hover:bg-white/10 md:hidden" data-mobile-menu-trigger type="button">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<a href="contact.html"  class="hidden sm:inline-flex bg-primary hover:bg-primary/90 text-background-dark px-6 py-2.5 rounded font-bold text-sm transition-all transform hover:scale-105">
                 GET A QUOTE
             </a>
+</div>
 </div>
 </header>
 <main>
@@ -373,7 +378,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 2. Functional Mobile Menu Overlay
-    const menuBtns = document.querySelectorAll('button.md\\:hidden, button[class*="md:hidden"]');
+    const menuBtns = document.querySelectorAll('[data-mobile-menu-trigger], button.md\:hidden, button[class*="md:hidden"], button[class*="lg:hidden"]');
     if(menuBtns.length > 0) {
         const mobileMenu = document.createElement('div');
         mobileMenu.className = 'fixed inset-0 bg-background-dark/98 backdrop-blur-2xl z-[100] flex flex-col items-center justify-center gap-8 translate-y-[-100%] transition-transform duration-500';

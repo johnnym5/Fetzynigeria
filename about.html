@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | FETZY NIGERIA LIMITED</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" /> rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ba8f2c",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#1a1a1a", // Graphite background
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<span class="material-symbols-outlined text-4xl">architecture</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight uppercase text-white">Fetzy Nigeria <span class="text-primary font-black">Limited</span></h1>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold hover:text-primary transition-colors text-white/90" href="index.html">Home</a>
+<a class="text-sm font-semibold text-primary transition-colors" href="about.html">About</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors text-white/90" href="projects.html">Projects</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors text-white/90" href="services.html">Services</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors text-white/90" href="contact.html">Contact</a>
+</nav>
+<a href="contact.html"  class="bg-primary hover:bg-primary/90 text-background-dark px-6 py-2.5 rounded font-bold text-sm transition-all transform hover:scale-105">
+                GET A QUOTE
+            </a>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-end">
+<div class="absolute inset-0 z-0">
+<img loading="lazy" class="w-full h-full object-cover grayscale opacity-40" data-alt="Modern high-rise building architectural blueprint and steel structure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0A8ldi5yjfoQJTsReWqtY6w-udKK89agU-26AX_H1vCWD6dPFH8csj8yoaGHuEJ3BeNuL48CvQE9J1It0aA09u7SlQC44RiGSNnr3BldNRCrZ-Sg4WKRQsUmzfeeWT5cifOOAAl3gmAdMsRSdpa6nG_p-_hvMRdfGfsCsrOVXZ5XCi3ibKGi671HKdUycwlX1TZfQGII-U7Fr59XD5H3SoPN3y9P50GndDmGY1zzGDqkl7fNvl9syEaZ9T0xR-WMJPnwBJ23lNKM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pb-20 w-full">
+<div class="flex flex-col gap-4 animate-fade-in-up">
+<nav class="flex items-center gap-2 text-primary/80 text-sm font-medium mb-4">
+<a href="index.html">Home</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-white">About Us</span>
+</nav>
+<h2 class="text-5xl md:text-7xl font-black tracking-tighter text-white max-w-4xl">
+                        DRIVING CONSTRUCTION EXCELLENCE IN NIGERIA.
+                    </h2>
+<p class="text-xl text-slate-300 max-w-2xl leading-relaxed mt-4 font-light">
+                        Our vision, mission, and the dedicated team behind the nation's most ambitious infrastructure projects.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Mission & Vision Section -->
+<section class="py-24 bg-background-light dark:bg-background-dark reveal" id="vision-mission">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="grid lg:grid-cols-2 gap-20 items-center">
+<div class="space-y-12">
+<div>
+<span class="inline-block px-3 py-1 rounded bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-6 border border-primary/20">Our Purpose</span>
+<h3 class="text-4xl font-bold mb-6 text-white">The Triple Bottom Line</h3>
+<p class="text-slate-400 dark:text-slate-300 leading-loose text-lg">
+                                At Fetzy Nigeria Limited, we believe in sustainable growth. Our commitment extends beyond the skyline; we focus on the intersection of social responsibility, environmental stewardship, and economic viability.
+                            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="p-8 border border-primary/20 bg-primary/5 rounded-xl hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">visibility</span>
+<h4 class="text-xl font-bold mb-3 text-white">Our Vision</h4>
+<p class="text-sm text-slate-400 leading-relaxed">To be the foremost provider of innovative and sustainable construction solutions across West Africa.</p>
+</div>
+<div class="p-8 border border-primary/20 bg-primary/5 rounded-xl hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">rocket_launch</span>
+<h4 class="text-xl font-bold mb-3 text-white">Our Mission</h4>
+<p class="text-sm text-slate-400 leading-relaxed">Delivering engineering excellence through precision, integrity, and a focus on long-term value for our clients.</p>
+</div>
+</div>
+</div>
+<div class="relative group">
+<img loading="lazy" class="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700 w-full" data-alt="Nigerian professional team collaborating on-site" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrUm1M66mK9cLym6qRoZtMnhhsaveHbksIMsZK8zDmSuamikkIs_grBoSs4yKP3bwWEBYYYBsk87-G5qgvwCM2lIxqxZWzyynUcMSNM5HoAqidVuUVTFZnL6ffmFClc8u4H9bVMTPIW4_ix5I44IKkSYgrKf--elnVUetNFMmkDWqikOxqVwE5fxByA2znzo348TI9eSn78hxseghkPzbpsv_DVRQydNO3hHV0wgx3uyAGkbZypA4XSUP50-tA8DhIIgtjbuZWs90"/>
+<div class="absolute -bottom-10 -left-10 bg-primary p-10 hidden xl:block shadow-2xl">
+<span class="block text-5xl font-black text-background-dark">10+</span>
+<span class="block text-xs font-bold text-background-dark tracking-widest uppercase">Years of Impact</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline Section -->
+<section class="py-24 bg-primary/5 border-y border-primary/10 reveal" id="timeline">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-white">A Decade of Growth</h2>
+</div>
+<div class="relative">
+<div class="absolute left-1/2 -translate-x-1/2 h-full w-px bg-primary/30 hidden md:block"></div>
+<div class="space-y-16">
+<!-- Item 1 -->
+<div class="flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="md:w-[45%] text-right hidden md:block">
+<h4 class="text-2xl font-bold text-primary">2013</h4>
+</div>
+<div class="z-10 bg-primary h-4 w-4 rounded-full ring-8 ring-background-dark hidden md:block"></div>
+<div class="md:w-[45%] space-y-2">
+<h4 class="text-2xl font-bold text-primary md:hidden">2013</h4>
+<h5 class="text-xl font-bold text-white">Incorporation</h5>
+<p class="text-slate-400">Fetzy Nigeria Limited was officially incorporated, beginning its journey as a boutique engineering firm in Lagos.</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col md:flex-row-reverse items-center justify-between gap-8">
+<div class="md:w-[45%] text-left hidden md:block">
+<h4 class="text-2xl font-bold text-primary">2017</h4>
+</div>
+<div class="z-10 bg-primary h-4 w-4 rounded-full ring-8 ring-background-dark hidden md:block"></div>
+<div class="md:w-[45%] md:text-right space-y-2">
+<h4 class="text-2xl font-bold text-primary md:hidden">2017</h4>
+<h5 class="text-xl font-bold text-white">National Expansion</h5>
+<p class="text-slate-400">Secured major infrastructure contracts across the federation, establishing our presence in Abuja and Port Harcourt.</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="md:w-[45%] text-right hidden md:block">
+<h4 class="text-2xl font-bold text-primary">2023</h4>
+</div>
+<div class="z-10 bg-primary h-4 w-4 rounded-full ring-8 ring-background-dark hidden md:block"></div>
+<div class="md:w-[45%] space-y-2">
+<h4 class="text-2xl font-bold text-primary md:hidden">2023</h4>
+<h5 class="text-xl font-bold text-white">Sustainable Pivot</h5>
+<p class="text-slate-400">Adopted full green-building protocols for all new residential projects, setting a new standard for the industry.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="flex justify-between items-end mb-16">
+<div class="max-w-xl">
+<span class="text-primary font-bold tracking-widest text-xs uppercase block mb-2">Leadership</span>
+<h2 class="text-4xl font-bold text-white">The Visionaries Behind the Build</h2>
+</div>
+<a class="text-primary font-semibold text-sm flex items-center gap-2 group" href="careers.html">
+                        Join Our Team <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Team Member 1 -->
+<div class="group">
+<div class="aspect-[4/5] bg-slate-800 rounded-xl overflow-hidden mb-6 relative">
+<img loading="lazy" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Engr. Femi Taiwo - African Male Executive" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWXtG7T-OSWrbCLvCUcKE3QyysM3emffI0rZLEYzeaHWlLt2Xpzv9imIYXDJOfxwTuHtrzHB6Xhr4QZ4kCxKP7YMDo1f9NOeNZvcHTAyG3sM-hk8fuUUb7ESJ_MiLRVNi_FQBt62uL4NYp42qFn3JDVDKSCCFpJ9UtrbiWrFylVrb3RJo6ZqcLQpvK5hiVT5V488ytIZohqwWcG_y7YUC66aT9yxBmJ5m265hA0FU3X0ldB4Tu8jr49xO_Bx-xO6aoia6ISpJ7msw"/>
+</div>
+<h4 class="text-lg font-bold text-white">Engr. Femi Taiwo</h4>
+<p class="text-primary text-sm font-medium mb-3">CEO &amp; Principal Partner</p>
+<p class="text-xs text-slate-400 leading-relaxed">With 20+ years of experience, Femi leads the firm's strategic vision and major project delivery.</p>
+</div>
+<!-- Team Member 2 -->
+<div class="group">
+<div class="aspect-[4/5] bg-slate-800 rounded-xl overflow-hidden mb-6 relative">
+<img loading="lazy" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Adesua Okonjo - African Female Project Manager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkFfiPJm-WQ4amGAOk5-zVvuF2cug4mNiVBYRWiGGL8Y7hBeYDxxBAzs9G85h1K4hOXIR7Kvy8EunUhBmh4dtNkVs-y12QzuqNszLMjDglgSOQDNsuoTI5G4T57TEWVBLWrTFaGCqSWc_KmlqGKYFT3-auSiWpylrOxxrM2PGffBlYrBzLWF59xQDQDW07zPhj2MzH4oy-YT4gKlJl6LySIFoWrzK-bwt3N99ComseV1niSMMXbvCgte7gZXkORaAmP6uBA82Kgyo"/>
+</div>
+<h4 class="text-lg font-bold text-white">Adesua Okonjo</h4>
+<p class="text-primary text-sm font-medium mb-3">Director of Operations</p>
+<p class="text-xs text-slate-400 leading-relaxed">Adesua ensures every project site operates with peak efficiency and safety standards.</p>
+</div>
+<!-- Team Member 3 -->
+<div class="group">
+<div class="aspect-[4/5] bg-slate-800 rounded-xl overflow-hidden mb-6 relative">
+<img loading="lazy" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Chidi Nwosu - African Male Architect" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7xjzf4T6eA6z4TZDBWY5DYaY0NjAG1mxfMSB26Pb0F1rD5H84Utznzkg8aWP3UVIVexy6jkWP9BqWrk1xlAl0JFZm_D9Y_BKEt3r1mHjV3A94U1ISfplgJaOkntlll_kQmTu5u5dK167X8Sz4OkRWtqnr6O2v64UVGZnztplUkVfRf9C_Z-9a9Th3olXf21p7yD41o6w75LdCjlOPqeeWJBu04BbvYgN6cPwm5rQwK6IdrlSSfD6nwKwcr3umUnaws1gD5dXSZaA"/>
+</div>
+<h4 class="text-lg font-bold text-white">Chidi Nwosu</h4>
+<p class="text-primary text-sm font-medium mb-3">Head Architect</p>
+<p class="text-xs text-slate-400 leading-relaxed">Mastermind behind our most iconic structural designs and aesthetic breakthroughs.</p>
+</div>
+<!-- Team Member 4 -->
+<div class="group">
+<div class="aspect-[4/5] bg-slate-800 rounded-xl overflow-hidden mb-6 relative">
+<img loading="lazy" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Sarah Bello - African Female Sustainability Lead" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw9n1S-DyeAsvpYa4b4nOs62hFf7e0O4RGCRRBFDIDyPm-fLE9jHFKhtVK_8J0Z-EtsGOFEBKCTzLEblIN8yTrEV9taO9fQgXqP4MWUJ3Y8klThiPYIY_67QRKznUJo8fy2mvTE_WabBVw2sJBFWG82uwr5LFoOcMRq3-A50u4b8q4tVCUYOmr-Oo2-RJTrp_uI4PAPwtzEQygoMVXMLwCSV0EOv7CR-xzKc-iMh2YKx9ioMrTSiWO3Tuduw86QzLZgagpc8Ld01M"/>
+</div>
+<h4 class="text-lg font-bold text-white">Sarah Bello</h4>
+<p class="text-primary text-sm font-medium mb-3">Sustainability Lead</p>
+<p class="text-xs text-slate-400 leading-relaxed">Sarah drives our environmental impact initiatives and green certification processes.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Quality Management Block -->
+<section class="py-24 bg-background-dark border-t border-primary/20">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="bg-primary/5 rounded-3xl overflow-hidden border border-primary/10 flex flex-col lg:flex-row">
+<div class="lg:w-1/2 p-12 lg:p-20 space-y-8">
+<h2 class="text-4xl font-black text-white leading-tight">Unyielding Quality Standards.</h2>
+<p class="text-slate-400 text-lg">
+                            Quality is not an act, it is a habit. Our Quality Management System (QMS) ensures that every bolt, beam, and blueprint exceeds international safety and durability standards.
+                        </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 text-slate-300">
+<span class="material-symbols-outlined text-primary">verified</span>
+                                ISO 9001:2015 Compliant Processes
+                            </li>
+<li class="flex items-center gap-4 text-slate-300">
+<span class="material-symbols-outlined text-primary">verified</span>
+                                Rigorous Third-Party Material Testing
+                            </li>
+<li class="flex items-center gap-4 text-slate-300">
+<span class="material-symbols-outlined text-primary">verified</span>
+                                Continuous Staff Certification Programs
+                            </li>
+</ul>
+</div>
+<div class="lg:w-1/2 relative min-h-[400px]">
+<img loading="lazy" class="absolute inset-0 w-full h-full object-cover" data-alt="African construction team in high-vis vests" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy4Pr9Hz9HP36cVcl3qpsHRR4zg69gWODj2fqL-aA6mUNjvhaDS4wqYuaIEFAyz2H6lo_z8ScvaNT0JbMiqVErfu8GlPU8MREz9jFtxqhTHLMhBbAKkFmeQdpXif3kc6gNwrYRdHfufFhYK2R09kXkyl0vmiiIG7zjtFS2HoHVkFQ5R4a1uGHdQKe9dnTH08zUTEko2RNOKEGfebnm4DaKcv4Gnzf9RIRqrokewp7hClEn8HuHmFl12WWPCXMxij5EEj0Y4teeVss"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-dark border-t border-primary/20 pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-3 text-primary mb-6">
+<span class="material-symbols-outlined text-4xl">architecture</span>
+<h1 class="text-xl font-bold tracking-tight text-white uppercase">Fetzy <span class="text-primary font-black">Nigeria</span></h1>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed">
+                        Leading Nigeria's transition into sustainable, high-tech infrastructure since 2013.
+                    </p>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Company</h5>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="process.html">Our Process</a></li>
+<li><a class="hover:text-primary transition-colors" href="index.html">Sustainability</a></li>
+<li><a class="hover:text-primary transition-colors" href="careers.html">Careers</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Services</h5>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="services.html">Commercial Build</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html">Road Construction</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html">Renovations</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html">Consultancy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Location</h5>
+<p class="text-slate-400 text-sm mb-4">Suite 209B, Samfa Plaza, Ndola Crescent, Wuse Zone 5, Abuja, Nigeria.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded bg-primary/10 border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="index.html">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="w-10 h-10 rounded bg-primary/10 border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="index.html">
+<span class="material-symbols-outlined text-xl">mail</span>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-primary/10 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-slate-400 text-xs">© 2024 FETZY NIGERIA LIMITED. All Rights Reserved.</p>
+<div class="flex gap-8 text-xs text-slate-400">
+<a class="hover:text-primary transition-colors" href="index.html">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="index.html">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Scroll-based reveal animation
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealOnScroll = () => {
+            const triggerBottom = window.innerHeight * 0.85;
+            
+            revealElements.forEach(el => {
+                const elTop = el.getBoundingClientRect().top;
+                if (elTop < triggerBottom) {
+                    el.classList.add('active');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', revealOnScroll);
+        // Trigger once on load
+        revealOnScroll();
+    </script>
+
+
+<!-- PREMIUM FRONTEND POLISH INJECTIONS -->
+<style>
+    html { scroll-behavior: smooth; }
+    .premium-hide { opacity: 0; transform: translateY(40px); transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1); }
+    .premium-show { opacity: 1; transform: translateY(0); }
+    #premium-toast { transform: translateY(150%); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+    #premium-toast.show { transform: translateY(0); }
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Premium Scroll Animations (Intersection Observer)
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                entry.target.classList.add('premium-show');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    
+    // Animate all major sections that aren't the intro header
+    document.querySelectorAll('section').forEach((el, index) => {
+        if (index > 0) { // skip the immediate hero section so it doesn't pop in weirdly
+            el.classList.add('premium-hide');
+            observer.observe(el);
+        }
+    });
+
+    // 2. Functional Mobile Menu Overlay
+    const menuBtns = document.querySelectorAll('button.md\\:hidden, button[class*="md:hidden"]');
+    if(menuBtns.length > 0) {
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'fixed inset-0 bg-background-dark/98 backdrop-blur-2xl z-[100] flex flex-col items-center justify-center gap-8 translate-y-[-100%] transition-transform duration-500';
+        mobileMenu.innerHTML = `
+            <button class="absolute top-8 right-8 text-white p-2 hover:text-primary transition-colors" id="close-menu">
+                <span class="material-symbols-outlined text-4xl">close</span>
+            </button>
+            <a href="index.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Home</a>
+            <a href="about.html" class="text-4xl font-black text-white hover:text-primary transition-colors">About</a>
+            <a href="services.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Services</a>
+            <a href="projects.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Projects</a>
+            <a href="contact.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Contact</a>
+            <a href="tel:08119111727" class="mt-8 bg-primary text-background-dark px-8 py-3 rounded-full font-bold shadow-lg">Call Us</a>
+        `;
+        document.body.appendChild(mobileMenu);
+        
+        menuBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-y-[-100%]');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        document.getElementById('close-menu').addEventListener('click', () => {
+            mobileMenu.classList.add('translate-y-[-100%]');
+            document.body.style.overflow = '';
+        });
+    }
+
+    // 3. Premium Contact Form Handling (Toast Notification)
+    // Create Toast Element
+    const toast = document.createElement('div');
+    toast.id = 'premium-toast';
+    toast.className = 'fixed bottom-8 right-8 bg-background-dark text-white px-6 py-4 rounded-xl shadow-2xl border border-primary/30 flex items-center gap-4 z-[100]';
+    toast.innerHTML = `
+        <span class="material-symbols-outlined text-primary text-2xl">check_circle</span>
+        <div>
+            <h4 class="font-bold">Message Sent!</h4>
+            <p class="text-sm text-slate-400">Our team will contact you shortly.</p>
+        </div>
+    `;
+    document.body.appendChild(toast);
+
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+        // override any existing alert implementations
+        form.removeAttribute('onsubmit');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Show toast
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 4000);
+            form.reset();
+        });
+    });
+});
+</script>
+
+</body></html>

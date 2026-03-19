@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Comprehensive construction and contracting services across Nigeria." name="description"/>
+<title>Services | FETZY NIGERIA LIMITED</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ba8f2c",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#1f1b13",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    animation: {
+                        'fade-up': 'fadeUp 0.6s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .service-card:hover {
+            box-shadow: 0 0 30px -5px rgba(186, 143, 44, 0.3);
+            transform: translateY(-8px);
+        }
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+        .stagger-3 { animation-delay: 0.3s; }
+        .stagger-4 { animation-delay: 0.4s; }
+        .stagger-5 { animation-delay: 0.5s; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16 sm:h-20">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<svg class="w-8 h-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h1 class="text-lg font-bold tracking-tight uppercase">Fetzy Nigeria Limited</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-medium text-primary" href="services.html">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="projects.html">Projects</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">About Us</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+</nav>
+<div class="flex items-center">
+<a class="bg-primary text-background-dark px-5 py-2 rounded-lg text-sm font-bold hover:brightness-110 transition-all mt-auto" href="contact.html">
+    Get a Quote
+</a>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full py-16 sm:py-32 overflow-hidden">
+<div class="absolute inset-0 z-0 bg-cover bg-center opacity-40" data-alt="African civil engineer supervising a construction site in Lagos" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBj_EKUaV_ip85qAhPFmGpYYGaDQ1nBk4XGwr3mpPyh3aWilTbYqDPKhGjNQbXuNapggU1mpWA58w8ZzISe8yt9XvMRKjhXk3VxJJ3uJTNEpKFXFJHVDyC_01tqTYVR6kiEU3AUtH1N3yNBwBTOibOJwIWAyAYB5lghmuOE8zz8Lb0a3NWKW5iz1kFW6pQcL6KZh4_DYFkoMJGHebiUc-Ox8UWsTkk8SwYUsNbCqzXvOP6ccfyMM0dcfToNoCOnaFCZ48Flfdmj4KU')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-transparent"></div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<span class="text-primary font-bold tracking-widest uppercase text-xs mb-4 block animate-fade-up">Expertise &amp; Innovation</span>
+<h2 class="text-4xl sm:text-5xl md:text-6xl font-black mb-6 tracking-tight animate-fade-up stagger-1">Our Services</h2>
+<p class="max-w-2xl mx-auto text-slate-300 text-lg leading-relaxed animate-fade-up stagger-2">
+    From foundational engineering to high-rise developments, FETZY NIGERIA LIMITED delivers world-class infrastructure solutions across Africa's most dynamic markets.
+</p>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Building Construction -->
+<div class="service-card opacity-0 animate-fade-up stagger-1 group relative bg-slate-100 dark:bg-slate-900/50 p-8 rounded-xl border border-transparent hover:border-primary/40">
+<div class="flex items-center justify-between mb-6">
+<span class="material-symbols-outlined text-4xl text-primary">apartment</span>
+<span class="text-slate-400 text-xs font-bold uppercase tracking-widest">01</span>
+</div>
+<h3 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">Building Construction</h3>
+<p class="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
+    Sustainable residential and commercial architecture designed for the future of Nigerian urban centers.
+</p>
+<a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all" href="index.html">
+    View Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Road Construction -->
+<div class="service-card opacity-0 animate-fade-up stagger-2 group relative bg-slate-100 dark:bg-slate-900/50 p-8 rounded-xl border border-transparent hover:border-primary/40">
+<div class="flex items-center justify-between mb-6">
+<span class="material-symbols-outlined text-4xl text-primary">engineering</span>
+<span class="text-slate-400 text-xs font-bold uppercase tracking-widest">02</span>
+</div>
+<h3 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">Road Construction</h3>
+<p class="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
+    Enduring road networks and heavy-duty pavement solutions optimized for local climate and heavy logistics.
+</p>
+<a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all" href="index.html">
+    View Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Real Estate -->
+<div class="service-card opacity-0 animate-fade-up stagger-3 group relative bg-slate-100 dark:bg-slate-900/50 p-8 rounded-xl border border-transparent hover:border-primary/40">
+<div class="flex items-center justify-between mb-6">
+<span class="material-symbols-outlined text-4xl text-primary">domain</span>
+<span class="text-slate-400 text-xs font-bold uppercase tracking-widest">03</span>
+</div>
+<h3 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">Real Estate</h3>
+<p class="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
+    Strategic property development and high-yield real estate investments in Nigeria's prime locations.
+</p>
+<a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all" href="index.html">
+    View Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Supply of General Goods -->
+<div class="service-card opacity-0 animate-fade-up stagger-4 group relative bg-slate-100 dark:bg-slate-900/50 p-8 rounded-xl border border-transparent hover:border-primary/40">
+<div class="flex items-center justify-between mb-6">
+<span class="material-symbols-outlined text-4xl text-primary">local_shipping</span>
+<span class="text-slate-400 text-xs font-bold uppercase tracking-widest">04</span>
+</div>
+<h3 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">Procurement &amp; Logistics</h3>
+<p class="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
+    Agile supply chain management for industrial materials and specialized equipment nationwide.
+</p>
+<a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all" href="index.html">
+    View Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- General Contract -->
+<div class="service-card opacity-0 animate-fade-up stagger-5 group relative bg-slate-100 dark:bg-slate-900/50 p-8 rounded-xl border border-transparent hover:border-primary/40 ">
+<div class="flex items-center justify-between mb-6">
+<span class="material-symbols-outlined text-4xl text-primary">handshake</span>
+<span class="text-slate-400 text-xs font-bold uppercase tracking-widest">05</span>
+</div>
+<h3 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">General Contracting</h3>
+    <p class="text-slate-400 text-sm leading-relaxed flex-grow">
+        Comprehensive project management from conceptualization to commissioning. We bring accountability and technical precision to diverse public and private sector projects.
+    </p>
+<a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all mt-auto" href="index.html">
+        View Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Secondary Image Section -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div class="rounded-2xl overflow-hidden h-96 group">
+<img loading="lazy" alt="Skilled African construction team working together" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkF1IdFMPC_DsSyN_n0QO65B2OUiP23_IDC_4oQ8hMYzsWlai7_trEmsYnneI5wQCmwZZiM47FNikWl8jiRaURtAhh1T18L1ZHK3qUtevoVLObuzbXm2Ku7pxZnbHSE3u2ba8VhcBQSs8Wd6WVoPx6ZC2rB7em6oxILgLdwAjHdR3k6ldKe3wVLyQjfpxvXBscb7govb61W-l3kAWrceixczvTLsdGYp1B2d0qAAdNO-GzZU6sTiOPfB6bX9LvfAcEu5J7QCum4Cc"/>
+</div>
+<div class="space-y-6">
+<h3 class="text-3xl font-bold">Built by Experts, Inspired by Nigeria</h3>
+<p class="text-slate-400">Our team of certified engineers and project managers bring local insights and global standards to every brick laid. We are committed to empowering local talent while delivering infrastructure that stands the test of time.</p>
+<div class="flex gap-4">
+<div class="bg-primary/10 p-4 rounded-lg flex-1">
+<span class="text-primary font-bold text-2xl block">150+</span>
+<span class="text-xs uppercase tracking-wider text-slate-400">Projects Completed</span>
+</div>
+<div class="bg-primary/10 p-4 rounded-lg flex-1">
+<span class="text-primary font-bold text-2xl block">12+</span>
+<span class="text-xs uppercase tracking-wider text-slate-400">States Covered</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-primary/10 py-16 border-y border-primary/20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="text-3xl font-bold mb-4">Ready to start your next project?</h2>
+<p class="text-slate-400 mb-8 max-w-xl mx-auto">Contact our team today to discuss how we can help bring your unique project vision to life with Nigerian excellence.</p>
+<a class="inline-block bg-primary text-background-dark px-8 py-3 rounded-lg font-bold hover:scale-105 transition-transform mt-auto" href="contact.html">
+    Contact Us Today
+</a>
+</div>
+</section>
+</main>
+<footer class="bg-background-dark border-t border-slate-800 py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-primary">
+<svg class="w-6 h-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-md font-bold uppercase">Fetzy Nigeria</h2>
+</div>
+<p class="text-slate-400 text-sm">Delivering excellence in engineering and construction across the Nigerian landscape since inception.</p>
+</div>
+<div>
+<h3 class="text-sm font-bold text-white uppercase mb-6">Services</h3>
+<ul class="space-y-3 text-sm text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="index.html">Building Construction</a></li>
+<li><a class="hover:text-primary transition-colors" href="index.html">Road Infrastructure</a></li>
+<li><a class="hover:text-primary transition-colors" href="index.html">Real Estate Development</a></li>
+<li><a class="hover:text-primary transition-colors" href="index.html">Procurement Services</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-sm font-bold text-white uppercase mb-6">Company</h3>
+<ul class="space-y-3 text-sm text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="projects.html">Our Projects</a></li>
+<li><a class="hover:text-primary transition-colors" href="index.html">Partnerships</a></li>
+<li><a class="hover:text-primary transition-colors" href="careers.html">Careers</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-sm font-bold text-white uppercase mb-6">Contact</h3>
+<ul class="space-y-3 text-sm text-slate-400">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-base">location_on</span>
+<span>Abuja, Nigeria</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">mail</span>
+<span>FETZYLIMITED@GMAIL.COM</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">phone</span>
+<span>0707 7776125</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-400 text-xs text-center md:text-left">© 2024 FETZY NIGERIA LIMITED. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-slate-400 hover:text-primary transition-colors" href="index.html">
+<span class="sr-only">LinkedIn</span>
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+
+<!-- PREMIUM FRONTEND POLISH INJECTIONS -->
+<style>
+    html { scroll-behavior: smooth; }
+    .premium-hide { opacity: 0; transform: translateY(40px); transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1); }
+    .premium-show { opacity: 1; transform: translateY(0); }
+    #premium-toast { transform: translateY(150%); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+    #premium-toast.show { transform: translateY(0); }
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Premium Scroll Animations (Intersection Observer)
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                entry.target.classList.add('premium-show');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    
+    // Animate all major sections that aren't the intro header
+    document.querySelectorAll('section').forEach((el, index) => {
+        if (index > 0) { // skip the immediate hero section so it doesn't pop in weirdly
+            el.classList.add('premium-hide');
+            observer.observe(el);
+        }
+    });
+
+    // 2. Functional Mobile Menu Overlay
+    const menuBtns = document.querySelectorAll('button.md\\:hidden, button[class*="md:hidden"]');
+    if(menuBtns.length > 0) {
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'fixed inset-0 bg-background-dark/98 backdrop-blur-2xl z-[100] flex flex-col items-center justify-center gap-8 translate-y-[-100%] transition-transform duration-500';
+        mobileMenu.innerHTML = `
+            <button class="absolute top-8 right-8 text-white p-2 hover:text-primary transition-colors" id="close-menu">
+                <span class="material-symbols-outlined text-4xl">close</span>
+            </button>
+            <a href="index.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Home</a>
+            <a href="about.html" class="text-4xl font-black text-white hover:text-primary transition-colors">About</a>
+            <a href="services.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Services</a>
+            <a href="projects.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Projects</a>
+            <a href="contact.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Contact</a>
+            <a href="tel:08119111727" class="mt-8 bg-primary text-background-dark px-8 py-3 rounded-full font-bold shadow-lg mt-auto">Call Us</a>
+        `;
+        document.body.appendChild(mobileMenu);
+        
+        menuBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-y-[-100%]');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        document.getElementById('close-menu').addEventListener('click', () => {
+            mobileMenu.classList.add('translate-y-[-100%]');
+            document.body.style.overflow = '';
+        });
+    }
+
+    // 3. Premium Contact Form Handling (Toast Notification)
+    // Create Toast Element
+    const toast = document.createElement('div');
+    toast.id = 'premium-toast';
+    toast.className = 'fixed bottom-8 right-8 bg-background-dark text-white px-6 py-4 rounded-xl shadow-2xl border border-primary/30 flex items-center gap-4 z-[100]';
+    toast.innerHTML = `
+        <span class="material-symbols-outlined text-primary text-2xl">check_circle</span>
+        <div>
+            <h4 class="font-bold">Message Sent!</h4>
+            <p class="text-sm text-slate-400">Our team will contact you shortly.</p>
+        </div>
+    `;
+    document.body.appendChild(toast);
+
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+        // override any existing alert implementations
+        form.removeAttribute('onsubmit');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Show toast
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 4000);
+            form.reset();
+        });
+    });
+});
+</script>
+
+</body></html>

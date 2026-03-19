@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Process | FETZY NIGERIA LIMITED</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ba8f2c",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#1f1b13",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .timeline-progress-bar {
+            height: 0%;
+            transition: height 0.1s linear;
+        }
+        .stage-card {
+            opacity: 0.3;
+            transform: translateY(20px);
+            transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .stage-card.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+        }
+        .stage-card.active .reveal-content {
+            max-height: 200px;
+        }
+        .dot-pulse {
+            box-shadow: 0 0 0 0 rgba(186, 143, 44, 0.7);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(186, 143, 44, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(186, 143, 44, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(186, 143, 44, 0); }
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<!-- Header Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded flex items-center justify-center text-background-dark">
+<span class="material-symbols-outlined font-bold">architecture</span>
+</div>
+<h1 class="text-xl font-black tracking-tighter uppercase">FETZY NIGERIA LIMITED</h1>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="projects.html">Projects</a>
+<a class="text-sm font-medium text-primary" href="process.html">Process</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+</nav>
+<a href="contact.html"  class="bg-primary hover:bg-primary/90 text-background-dark px-6 py-2.5 rounded-lg text-sm font-bold transition-all transform hover:scale-105">
+            Get a Quote
+        </a>
+</div>
+</header>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative pt-24 pb-16 px-6">
+<div class="max-w-4xl mx-auto text-center">
+<span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase mb-6">Our Methodology</span>
+<h2 class="text-5xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tight">Our Project <span class="text-primary">Lifecycle.</span></h2>
+<p class="text-lg md:text-xl text-slate-400 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                A seamless, transparent journey from initial concept to the final handover. We combine Nigerian ingenuity with global standards.
+            </p>
+</div>
+</section>
+<!-- Timeline Section -->
+<section class="max-w-6xl mx-auto px-6 py-20 relative">
+<!-- Scroll-Linked Progress Line -->
+<div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 bg-slate-200 dark:bg-slate-800 transform md:-translate-x-1/2 rounded-full overflow-hidden">
+<div class="timeline-progress-bar w-full bg-primary origin-top" id="timelineProgress"></div>
+</div>
+<div class="space-y-32 relative">
+<!-- Stage 1 -->
+<div class="stage-card relative flex flex-col md:flex-row items-center w-full" data-stage="1">
+<div class="hidden md:block w-1/2 pr-20 text-right">
+<span class="text-primary font-bold text-sm tracking-widest uppercase">Phase 01</span>
+<h3 class="text-3xl font-black mb-4">Preconstruction</h3>
+<p class="text-slate-400 dark:text-slate-300 mb-6">In-depth site feasibility studies across Lagos and Abuja, comprehensive budgeting, and local regulatory environmental impact assessments.</p>
+<div class="reveal-content bg-primary/5 p-4 rounded-lg border-r-4 border-primary inline-block text-left">
+<p class="text-sm font-medium italic">"We identify risks before they become costs."</p>
+</div>
+</div>
+<div class="absolute left-2.5 md:left-1/2 size-12 bg-background-dark dark:bg-background-light border-4 border-primary rounded-full transform md:-translate-x-1/2 z-20 flex items-center justify-center transition-all duration-300">
+<span class="material-symbols-outlined text-primary text-2xl font-bold">leaderboard</span>
+</div>
+<div class="pl-20 md:w-1/2 w-full">
+<div class="md:hidden mb-6">
+<span class="text-primary font-bold text-sm tracking-widest uppercase">Phase 01</span>
+<h3 class="text-3xl font-black mb-4">Preconstruction</h3>
+</div>
+<div class="group relative aspect-video rounded-2xl overflow-hidden border border-primary/20 shadow-2xl">
+<img loading="lazy" alt="Nigerian Engineer site survey" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB07TnQida6pEE6HCBkq5YbWNaqvVg40Ip6HuuHNAdQnZ1hzyBt5uvCHAfNVYH-hkfT4ehpN8tqNUjXsZTUsLm_xxLHThD-9UCs_3_bdOR044dpWvSqXt2slyDa--gTT0x_g6IIpP5up2AkipBJyIblbk6P0XWjqnnAjBfmORO2Zicij_RvOMcXDTTIVs6EpuSJwYfjgEVN0i2DhJUuPxDoshomPMKPt7GIBNADQNw9HOqEjN1fX9-kmO7SI0mDLBnkn5WojKBR0ck"/>
+<div class="absolute inset-0 bg-background-dark/40 group-hover:bg-transparent transition-colors"></div>
+</div>
+</div>
+</div>
+<!-- Stage 2 -->
+<div class="stage-card relative flex flex-col md:flex-row-reverse items-center w-full" data-stage="2">
+<div class="hidden md:block w-1/2 pl-20 text-left">
+<span class="text-primary font-bold text-sm tracking-widest uppercase">Phase 02</span>
+<h3 class="text-3xl font-black mb-4">Design &amp; Planning</h3>
+<p class="text-slate-400 dark:text-slate-300 mb-6">State-of-the-art 3D modeling and Nigerian building code compliance. We bridge the gap between architectural vision and structural reality.</p>
+<div class="reveal-content bg-primary/5 p-4 rounded-lg border-l-4 border-primary">
+<ul class="text-sm space-y-2 font-medium">
+<li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-primary"></span> BIM Coordination</li>
+<li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-primary"></span> Permitting &amp; Approval</li>
+</ul>
+</div>
+</div>
+<div class="absolute left-2.5 md:left-1/2 size-12 bg-primary border-4 border-background-dark rounded-full transform md:-translate-x-1/2 z-20 flex items-center justify-center shadow-xl">
+<span class="material-symbols-outlined text-background-dark text-2xl font-bold">edit_note</span>
+</div>
+<div class="pr-20 md:w-1/2 w-full">
+<div class="md:hidden mb-6 pl-20">
+<span class="text-primary font-bold text-sm tracking-widest uppercase">Phase 02</span>
+<h3 class="text-3xl font-black mb-4">Design &amp; Planning</h3>
+</div>
+<div class="group relative aspect-video rounded-2xl overflow-hidden border border-primary/20 shadow-2xl ml-20 md:ml-0">
+<img loading="lazy" alt="African architects reviewing blueprints" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkgAYJDRanTNCc8DOZjYnlUKlxK7UKfk6rO3Rom3ffSwKtLBH7NI1CXF5Eu01xLEVNXj-AJgG6ss0mkoykcAyp7Bl2jUl18vK77ifsnxMGtKgq_LVxkOeomxjCp3w2-5GGwUFeXgjRNCp4uwQOGbGsvIcaNuItt5v_eAOiKROskSVSs8-bF5dME_oXPN7rjYyW2mJsivZMhSTem5d6f-wacCik8CxsewTvxPAMPv-sZUgRWIIjvv02DSB0m14DhrGJLT7wAupgTpg"/>
+<div class="absolute inset-0 bg-background-dark/40 group-hover:bg-transparent transition-colors"></div>
+</div>
+</div>
+</div>
+<!-- Stage 3 -->
+<div class="stage-card relative flex flex-col md:flex-row items-center w-full" data-stage="3">
+<div class="hidden md:block w-1/2 pr-20 text-right">
+<span class="text-primary font-bold text-sm tracking-widest uppercase">Phase 03</span>
+<h3 class="text-3xl font-black mb-4">Procurement</h3>
+<p class="text-slate-400 dark:text-slate-300 mb-6">Ethical sourcing of premium local and international materials. We manage logistics to ensure timely delivery to the site.</p>
+<div class="reveal-content bg-primary/5 p-4 rounded-lg border-r-4 border-primary inline-block text-left">
+<p class="text-sm font-medium italic">"Quality materials for multigenerational structures."</p>
+</div>
+</div>
+<div class="absolute left-2.5 md:left-1/2 size-12 bg-primary border-4 border-background-dark rounded-full transform md:-translate-x-1/2 z-20 flex items-center justify-center shadow-xl">
+<span class="material-symbols-outlined text-background-dark text-2xl font-bold">inventory_2</span>
+</div>
+<div class="pl-20 md:w-1/2 w-full">
+<div class="md:hidden mb-6">
+<span class="text-primary font-bold text-sm tracking-widest uppercase">Phase 03</span>
+<h3 class="text-3xl font-black mb-4">Procurement</h3>
+</div>
+<div class="group relative aspect-video rounded-2xl overflow-hidden border border-primary/20 shadow-2xl">
+<img loading="lazy" alt="Logistics in Lagos Port" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGFKO39OryYS7iA7cmkIELsU-OrXEJ82u_Ey_386NTd3TueqgKl6o7BvyC4VRjrgcfo27DpbZni6DBzkY80wXeHNqaXQ_nbhuiv9MNAGFV-R2g4FkkR_xpaqGVVOZbMelEZW28hq1qZ5xkkX1BIP-KAbkq8wUxcTpQbb8Ik--8IIZs5f3sjuwzk0XxaEJNTINd-ASXlkdn7khEAILcYnW_aLQwtgbqUTEtdCWOjqOswpzmpx1pAvdeVbEEzUvbGWfa4yqbkNuFMtA"/>
+<div class="absolute inset-0 bg-background-dark/40 group-hover:bg-transparent transition-colors"></div>
+</div>
+</div>
+</div>
+<!-- Stage 4 -->
+<div class="stage-card relative flex flex-col md:flex-row-reverse items-center w-full" data-stage="4">
+<div class="hidden md:block w-1/2 pl-20 text-left">
+<span class="text-primary font-bold text-sm tracking-widest uppercase">Phase 04</span>
+<h3 class="text-3xl font-black mb-4">Construction</h3>
+<p class="text-slate-400 dark:text-slate-300 mb-6">Active site management by certified Nigerian engineers. We prioritize safety, speed, and precision in every brick laid.</p>
+<div class="reveal-content bg-primary/5 p-4 rounded-lg border-l-4 border-primary">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">security</span>
+<span class="text-sm font-bold">ZERO ACCIDENT POLICY</span>
+</div>
+</div>
+</div>
+<div class="absolute left-2.5 md:left-1/2 size-12 bg-background-dark dark:bg-background-light border-4 border-primary rounded-full transform md:-translate-x-1/2 z-20 flex items-center justify-center transition-all duration-300">
+<span class="material-symbols-outlined text-primary text-2xl font-bold">foundation</span>
+</div>
+<div class="pr-20 md:w-1/2 w-full">
+<div class="md:hidden mb-6 pl-20">
+<span class="text-primary font-bold text-sm tracking-widest uppercase">Phase 04</span>
+<h3 class="text-3xl font-black mb-4">Construction</h3>
+</div>
+<div class="group relative aspect-video rounded-2xl overflow-hidden border border-primary/20 shadow-2xl ml-20 md:ml-0">
+<img loading="lazy" alt="Construction in Africa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpZBYZ0bHxwxlHH3O6nqd415XS7Z2G0BAsxoUtyBPRZhafQaDhdMpqV-wwUO-s7at6dMwQAQ4p8pELsonVKwvs0P1Zs9CvvKOWzd5VK8wcfjC6CTcnIa9dXqrOc_toWHCtrtbLV6otmI1AQwDJBDcbms0Z6m09gGiTS40Jxn8zGvkPptRg6Zu2rYthT_eIJ-HB2W_g5kxITTFOEhj6mIV4zUg6V_BeRoKJR3511hDqWryK-JneHd2vtAeqOxhEZEVfU2SJwghLIiA"/>
+<div class="absolute inset-0 bg-background-dark/40 group-hover:bg-transparent transition-colors"></div>
+</div>
+</div>
+</div>
+<!-- Stage 5 -->
+<div class="stage-card relative flex flex-col md:flex-row items-center w-full" data-stage="5">
+<div class="hidden md:block w-1/2 pr-20 text-right">
+<span class="text-primary font-bold text-sm tracking-widest uppercase">Phase 05</span>
+<h3 class="text-3xl font-black mb-4">Handover</h3>
+<p class="text-slate-400 dark:text-slate-300 mb-6">Final commission, comprehensive walkthrough, and documentation transfer. We stand by our work long after the keys are turned.</p>
+<div class="reveal-content bg-primary/5 p-4 rounded-lg border-r-4 border-primary inline-block text-left">
+<p class="text-sm font-medium italic">"Your vision, now a reality."</p>
+</div>
+</div>
+<div class="absolute left-2.5 md:left-1/2 size-12 bg-background-dark dark:bg-background-light border-4 border-primary rounded-full transform md:-translate-x-1/2 z-20 flex items-center justify-center transition-all duration-300">
+<span class="material-symbols-outlined text-primary text-2xl font-bold">key</span>
+</div>
+<div class="pl-20 md:w-1/2 w-full">
+<div class="md:hidden mb-6">
+<span class="text-primary font-bold text-sm tracking-widest uppercase">Phase 05</span>
+<h3 class="text-3xl font-black mb-4">Handover</h3>
+</div>
+<div class="group relative aspect-video rounded-2xl overflow-hidden border border-primary/20 shadow-2xl">
+<img loading="lazy" alt="Modern Lagos Architecture" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEWsCD9XFhK82zaq3BRK0BNqK9g4OzuNmDp6gaoZiGmtYaiOJSC9EZFB5Jd7IMiQdCJ2zPbwoWaNRGn77qlnSH0fEn_nhDYF_7CUjkfkEOCL2D9lkFAaFc8l9DytY5-x4mlpdyDs7oLoQ5qpxFBaeR87zqNwpcEBS9DHcXWIcazFyJZOwE8EabqDce6WIw3_oVwEwkLOxdzoumQyrTyIDgi0WBx1HYR7ECnq-gniuY-xTAbkKKcxIeptzj-othAIiHXe1NWe-eBqY"/>
+<div class="absolute inset-0 bg-background-dark/40 group-hover:bg-transparent transition-colors"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quality Commitment -->
+<section class="bg-primary/5 py-24 px-6 border-y border-primary/10">
+<div class="max-w-7xl mx-auto">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-3xl font-bold mb-6">Quality Control Commitment</h2>
+<p class="text-lg text-slate-400 dark:text-slate-300 mb-8 leading-relaxed">
+                        Our step-by-step project lifecycle and quality control process ensure that every FETZY project meets the highest international standards for safety, durability, and aesthetics.
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-medium">Rigorous material testing</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-medium">International Safety Standards (HSE)</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-medium">Weekly progress &amp; quality audits</span>
+</li>
+</ul>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-8 rounded-2xl bg-background-light dark:bg-background-dark border border-primary/10">
+<p class="text-4xl font-black text-primary mb-2">15+</p>
+<p class="text-sm uppercase tracking-widest font-bold opacity-60">Years Experience</p>
+</div>
+<div class="p-8 rounded-2xl bg-background-light dark:bg-background-dark border border-primary/10">
+<p class="text-4xl font-black text-primary mb-2">200+</p>
+<p class="text-sm uppercase tracking-widest font-bold opacity-60">Projects Done</p>
+</div>
+<div class="p-8 rounded-2xl bg-background-light dark:bg-background-dark border border-primary/10">
+<p class="text-4xl font-black text-primary mb-2">100%</p>
+<p class="text-sm uppercase tracking-widest font-bold opacity-60">Safety Record</p>
+</div>
+<div class="p-8 rounded-2xl bg-background-light dark:bg-background-dark border border-primary/10">
+<p class="text-4xl font-black text-primary mb-2">24/7</p>
+<p class="text-sm uppercase tracking-widest font-bold opacity-60">Site Monitoring</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-dark text-slate-100 py-16 px-6 border-t border-primary/20">
+<div class="max-w-7xl mx-auto">
+<div class="grid md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="size-6 bg-primary rounded flex items-center justify-center text-background-dark">
+<span class="material-symbols-outlined text-xs font-bold">architecture</span>
+</div>
+<h2 class="text-lg font-black tracking-tighter uppercase">FETZY NIGERIA LIMITED</h2>
+</div>
+<p class="text-slate-400 max-w-sm mb-6">
+                    Leading construction and engineering firm in Nigeria, dedicated to building sustainable infrastructure for a better tomorrow.
+                </p>
+<div class="flex gap-4">
+<a class="size-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary/10 transition-colors" href="index.html">
+<span class="material-symbols-outlined text-primary text-lg">share</span>
+</a>
+<a class="size-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary/10 transition-colors" href="index.html">
+<span class="material-symbols-outlined text-primary text-lg">contact_mail</span>
+</a>
+</div>
+</div>
+<div>
+<h3 class="font-bold text-sm uppercase tracking-widest mb-6">Explore</h3>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="projects.html">Commercial Projects</a></li>
+<li><a class="hover:text-primary transition-colors" href="projects.html">Residential Spaces</a></li>
+<li><a class="hover:text-primary transition-colors" href="projects.html">Road Construction</a></li>
+<li><a class="hover:text-primary transition-colors" href="index.html">Sustainability</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-sm uppercase tracking-widest mb-6">Contact</h3>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li>Lagos, Nigeria</li>
+<li>info@fetzyng.com</li>
+<li>0707 7776125</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-primary/10 flex flex-col md:flex-row justify-between gap-4 text-slate-400 text-xs font-medium">
+<p>© 2024 FETZY NIGERIA LIMITED. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="index.html">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="index.html">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    // Scroll-linked Progress and Intersection Observer for reveal animations
+    document.addEventListener('DOMContentLoaded', () => {
+        const progressBar = document.getElementById('timelineProgress');
+        const cards = document.querySelectorAll('.stage-card');
+        const timelineSection = document.querySelector('section.relative');
+
+        const observerOptions = {
+            threshold: 0.3,
+            rootMargin: '0px 0px -10% 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const dot = entry.target.querySelector('.size-12');
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    dot.classList.add('dot-pulse');
+                    dot.style.transform = window.innerWidth >= 768 ? 'translateX(-50%) scale(1.2)' : 'scale(1.2)';
+                } else {
+                    // We keep active class once triggered for better UX, or remove for repeated animation
+                    // entry.target.classList.remove('active');
+                    // dot.classList.remove('dot-pulse');
+                }
+            });
+        }, observerOptions);
+
+        cards.forEach(card => observer.observe(card));
+
+        window.addEventListener('scroll', () => {
+            const rect = timelineSection.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            const sectionHeight = timelineSection.offsetHeight;
+            
+            // Calculate how much of the timeline is scrolled
+            let scrollPercent = ((windowHeight/2 - rect.top) / sectionHeight) * 100;
+            scrollPercent = Math.min(Math.max(scrollPercent, 0), 100);
+            
+            progressBar.style.height = `${scrollPercent}%`;
+        });
+    });
+</script>
+
+
+<!-- PREMIUM FRONTEND POLISH INJECTIONS -->
+<style>
+    html { scroll-behavior: smooth; }
+    .premium-hide { opacity: 0; transform: translateY(40px); transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1); }
+    .premium-show { opacity: 1; transform: translateY(0); }
+    #premium-toast { transform: translateY(150%); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+    #premium-toast.show { transform: translateY(0); }
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Premium Scroll Animations (Intersection Observer)
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                entry.target.classList.add('premium-show');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    
+    // Animate all major sections that aren't the intro header
+    document.querySelectorAll('section').forEach((el, index) => {
+        if (index > 0) { // skip the immediate hero section so it doesn't pop in weirdly
+            el.classList.add('premium-hide');
+            observer.observe(el);
+        }
+    });
+
+    // 2. Functional Mobile Menu Overlay
+    const menuBtns = document.querySelectorAll('button.md\\:hidden, button[class*="md:hidden"]');
+    if(menuBtns.length > 0) {
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'fixed inset-0 bg-background-dark/98 backdrop-blur-2xl z-[100] flex flex-col items-center justify-center gap-8 translate-y-[-100%] transition-transform duration-500';
+        mobileMenu.innerHTML = `
+            <button class="absolute top-8 right-8 text-white p-2 hover:text-primary transition-colors" id="close-menu">
+                <span class="material-symbols-outlined text-4xl">close</span>
+            </button>
+            <a href="index.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Home</a>
+            <a href="about.html" class="text-4xl font-black text-white hover:text-primary transition-colors">About</a>
+            <a href="services.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Services</a>
+            <a href="projects.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Projects</a>
+            <a href="contact.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Contact</a>
+            <a href="tel:08119111727" class="mt-8 bg-primary text-background-dark px-8 py-3 rounded-full font-bold shadow-lg">Call Us</a>
+        `;
+        document.body.appendChild(mobileMenu);
+        
+        menuBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-y-[-100%]');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        document.getElementById('close-menu').addEventListener('click', () => {
+            mobileMenu.classList.add('translate-y-[-100%]');
+            document.body.style.overflow = '';
+        });
+    }
+
+    // 3. Premium Contact Form Handling (Toast Notification)
+    // Create Toast Element
+    const toast = document.createElement('div');
+    toast.id = 'premium-toast';
+    toast.className = 'fixed bottom-8 right-8 bg-background-dark text-white px-6 py-4 rounded-xl shadow-2xl border border-primary/30 flex items-center gap-4 z-[100]';
+    toast.innerHTML = `
+        <span class="material-symbols-outlined text-primary text-2xl">check_circle</span>
+        <div>
+            <h4 class="font-bold">Message Sent!</h4>
+            <p class="text-sm text-slate-400">Our team will contact you shortly.</p>
+        </div>
+    `;
+    document.body.appendChild(toast);
+
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+        // override any existing alert implementations
+        form.removeAttribute('onsubmit');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Show toast
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 4000);
+            form.reset();
+        });
+    });
+});
+</script>
+
+</body></html>

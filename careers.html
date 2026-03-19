@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Careers | FETZY NIGERIA LIMITED</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" /> rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ba8f2c",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#1f1b13",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        .job-card {
+            opacity: 0;
+        }
+        .job-card.visible {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        input:invalid:not(:placeholder-shown) {
+            border-color: #ef4444;
+        }
+        .form-error {
+            display: none;
+            color: #ef4444;
+            font-size: 0.75rem;
+            margin-top: 0.25rem;
+        }
+        input:invalid:not(:placeholder-shown) + .form-error {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<!-- Navigation -->
+<header class="border-b border-slate-200 dark:border-primary/20 px-6 py-4 sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-background-dark">foundation</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight">FETZY NIGERIA LIMITED</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="projects.html">Projects</a>
+<a class="text-sm font-medium text-primary transition-colors" href="careers.html">Careers</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">About</a>
+<a class="bg-primary hover:bg-primary/90 text-background-dark px-5 py-2 rounded-lg text-sm font-bold transition-all" href="contact.html">
+                Contact Us
+            </a>
+</nav>
+<div class="md:hidden">
+<span class="material-symbols-outlined cursor-pointer">menu</span>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative py-16 px-6 lg:py-24">
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-8 animate-fade-in-up">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 w-fit">
+<span class="size-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-primary text-xs font-bold uppercase tracking-wider">Hiring Professionals</span>
+</div>
+<h1 class="text-5xl lg:text-7xl font-black leading-tight tracking-tight">
+                    Build the Future <br/><span class="text-primary">of Nigeria</span>
+</h1>
+<p class="text-lg text-slate-400 dark:text-slate-300 max-w-lg leading-relaxed">
+                    Join a diverse team of engineers and visionaries. We are looking for passionate Nigerian professionals to drive excellence in construction and sustainable development.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary text-background-dark px-8 py-4 rounded-xl font-bold text-lg hover:scale-[1.02] transition-transform" href="#positions">
+                        View Openings
+                    </a>
+<a class="border border-slate-300 dark:border-primary/30 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-100 dark:hover:bg-primary/5 transition-colors" href="#culture">
+                        Our Culture
+                    </a>
+</div>
+</div>
+<div class="relative group animate-fade-in-up" style="animation-delay: 0.2s;">
+<div class="absolute -inset-4 bg-primary/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all"></div>
+<div class="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+<img loading="lazy" alt="Diverse Nigerian engineering team on site" class="w-full h-full object-cover" data-alt="A diverse team of Nigerian construction professionals in hard hats discussing plans on a sunny site" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtVUx1hMqHSsQcdnOVQZ_o9RxEpXFFiaXk27KsGaq6B9e7Rsq1Uf60eeu7fjnn0Edqi78RVXadpING-o6B5y-zFyiC82IBL5WOaEP0OFTRS5oRpTtvO3zPkgc3XdfOfwOOp4Ktgms2yhn5B8WWmJhjQehS2OifEV2pDBvhCTvZj29oqo8A0BcrY04mlcdkgA4SnpVL__XtGEw1yXwmIUmh1WWPmeH_5CmfLWktmaM_nCmnLZQjzD6PfMQR4tFBGBxyRahkQVl8DDk"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Culture & Benefits -->
+<section class="py-20 bg-slate-100 dark:bg-background-dark/50 px-6" id="culture">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold mb-4">Our Culture &amp; Benefits</h2>
+<p class="text-slate-400 dark:text-slate-300 max-w-2xl mx-auto">We provide an environment where talent meets opportunity, fostering a culture of safety, growth, and industry-leading innovation for every Nigerian.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="bg-background-light dark:bg-primary/5 border border-slate-200 dark:border-primary/10 p-8 rounded-2xl shadow-sm hover:border-primary/40 transition-colors">
+<div class="size-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">lightbulb</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Innovation</h3>
+<p class="text-slate-400 dark:text-slate-300 leading-relaxed">
+                        We use modern techniques and cutting-edge BIM technology to solve complex engineering challenges across Nigeria.
+                    </p>
+</div>
+<div class="bg-background-light dark:bg-primary/5 border border-slate-200 dark:border-primary/10 p-8 rounded-2xl shadow-sm hover:border-primary/40 transition-colors">
+<div class="size-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">health_and_safety</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Safety First</h3>
+<p class="text-slate-400 dark:text-slate-300 leading-relaxed">
+                        Our team's health and safety are non-negotiable standards. We maintain rigorous safety protocols on every job site.
+                    </p>
+</div>
+<div class="bg-background-light dark:bg-primary/5 border border-slate-200 dark:border-primary/10 p-8 rounded-2xl shadow-sm hover:border-primary/40 transition-colors">
+<div class="size-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">trending_up</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Career Growth</h3>
+<p class="text-slate-400 dark:text-slate-300 leading-relaxed">
+                        Structured mentorship, international training, and clear professional development pathways for every employee.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Open Positions -->
+<section class="py-24 px-6" id="positions">
+<div class="max-w-5xl mx-auto">
+<div class="flex items-end justify-between mb-12">
+<div>
+<h2 class="text-4xl font-bold mb-2">Open Positions</h2>
+<p class="text-slate-400 dark:text-slate-300">Find your place in our growing team.</p>
+</div>
+<div class="hidden sm:block text-primary font-semibold text-sm">2 Positions Available</div>
+</div>
+<div class="space-y-4" id="job-list">
+<!-- Job 1 -->
+<div class="job-card group bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/10 rounded-2xl p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:border-primary transition-all shadow-sm">
+<div class="flex gap-5 items-center">
+<div class="size-14 bg-slate-100 dark:bg-background-dark rounded-xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">architecture</span>
+</div>
+<div>
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Project Manager</h3>
+<div class="flex flex-wrap gap-3 mt-1 text-sm text-slate-400 dark:text-slate-300">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Lagos, NG</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> Full-time</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">payments</span> Competitive</span>
+</div>
+</div>
+</div>
+<button class="w-full md:w-auto text-center border-2 border-primary text-primary hover:bg-primary hover:text-background-dark px-6 py-2 rounded-lg font-bold transition-all" onclick="document.getElementById('pos_select').value='Project Manager'; document.getElementById('apply').scrollIntoView();">
+                        Apply Now
+                    </button>
+</div>
+<!-- Job 2 -->
+<div class="job-card group bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/10 rounded-2xl p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:border-primary transition-all shadow-sm">
+<div class="flex gap-5 items-center">
+<div class="size-14 bg-slate-100 dark:bg-background-dark rounded-xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">engineering</span>
+</div>
+<div>
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Site Engineer</h3>
+<div class="flex flex-wrap gap-3 mt-1 text-sm text-slate-400 dark:text-slate-300">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Abuja, NG</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> Full-time</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">payments</span> Competitive</span>
+</div>
+</div>
+</div>
+<button class="w-full md:w-auto text-center border-2 border-primary text-primary hover:bg-primary hover:text-background-dark px-6 py-2 rounded-lg font-bold transition-all" onclick="document.getElementById('pos_select').value='Site Engineer'; document.getElementById('apply').scrollIntoView();">
+                        Apply Now
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Application Form -->
+<section class="py-24 px-6 bg-slate-50 dark:bg-background-dark/30" id="apply">
+<div class="max-w-3xl mx-auto bg-white dark:bg-primary/5 rounded-3xl border border-slate-200 dark:border-primary/10 overflow-hidden shadow-xl">
+<div class="p-8 md:p-12 border-b border-slate-200 dark:border-primary/10 bg-primary/5">
+<h2 class="text-3xl font-bold mb-2">Ready to Apply?</h2>
+<p class="text-slate-400 dark:text-slate-300">Fill out the form below and our HR team will reach out to you within 48 hours.</p>
+</div>
+<form class="p-8 md:p-12 space-y-6" id="application-form" >
+<div class="grid md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-300">Full Name</label>
+<input class="w-full bg-slate-100 dark:bg-background-dark border-transparent focus:border-primary focus:ring-0 rounded-xl px-4 py-3 transition-all" placeholder="John Doe" required="" type="text"/>
+<span class="form-error">Please enter your full name.</span>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-300">Email Address</label>
+<input class="w-full bg-slate-100 dark:bg-background-dark border-transparent focus:border-primary focus:ring-0 rounded-xl px-4 py-3 transition-all" placeholder="john@example.com" required="" type="email"/>
+<span class="form-error">Please enter a valid email address.</span>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-300">Position Applying For</label>
+<select class="w-full bg-slate-100 dark:bg-background-dark border-transparent focus:border-primary focus:ring-0 rounded-xl px-4 py-3 transition-all" id="pos_select" required="">
+<option value="">Select a position</option>
+<option value="Project Manager">Project Manager</option>
+<option value="Site Engineer">Site Engineer</option>
+<option value="Quantity Surveyor">Quantity Surveyor</option>
+<option value="Other">Other</option>
+</select>
+<span class="form-error">Please select a position.</span>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-300">Resume / CV</label>
+<div class="border-2 border-dashed border-slate-300 dark:border-primary/20 rounded-xl p-8 text-center hover:border-primary transition-colors cursor-pointer bg-slate-50 dark:bg-background-dark/20 relative" onclick="document.getElementById('cv-upload').click()">
+<input accept=".pdf,.docx" class="hidden" id="cv-upload" required="" type="file"/>
+<span class="material-symbols-outlined text-primary text-4xl mb-2">cloud_upload</span>
+<p class="text-sm text-slate-400 dark:text-slate-300">Drag and drop your file here or <span class="text-primary font-bold underline">browse</span></p>
+<p class="text-xs text-slate-400 mt-2">Supports PDF, DOCX (Max 10MB)</p>
+</div>
+<span class="form-error text-center block">Resume is required.</span>
+</div>
+<button class="w-full bg-primary text-background-dark font-black py-4 rounded-xl text-lg hover:shadow-lg hover:shadow-primary/20 transition-all" type="submit">
+                    Submit Application
+                </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-background-dark border-t border-slate-200 dark:border-primary/20 py-16 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="size-8 bg-primary flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-background-dark">foundation</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight">FETZY NIGERIA LIMITED</h2>
+</div>
+<p class="text-slate-400 dark:text-slate-300 max-w-sm mb-6 leading-relaxed">
+                    Redefining the landscape of Nigeria through excellence in engineering, construction, and sustainable infrastructure development.
+                </p>
+<div class="flex gap-4">
+<a class="size-10 rounded-full border border-slate-300 dark:border-primary/20 flex items-center justify-center hover:bg-primary transition-colors hover:text-background-dark" href="index.html">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+<a class="size-10 rounded-full border border-slate-300 dark:border-primary/20 flex items-center justify-center hover:bg-primary transition-colors hover:text-background-dark" href="index.html">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6 uppercase tracking-widest text-xs text-primary">Company</h4>
+<ul class="space-y-4 text-sm text-slate-400 dark:text-slate-300">
+<li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="projects.html">Projects</a></li>
+<li><a class="hover:text-primary transition-colors" href="careers.html">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="index.html">News</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 uppercase tracking-widest text-xs text-primary">Office</h4>
+<ul class="space-y-4 text-sm text-slate-400 dark:text-slate-300">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-base">location_on</span>
+<span>Main Headquarters Building,<br/>Lagos, Nigeria</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">call</span>
+<span>+234 800 000 0000</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-200 dark:border-primary/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
+<p>© 2024 FETZY NIGERIA LIMITED. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="index.html">Privacy Policy</a>
+<a class="hover:text-primary" href="index.html">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    // Smooth entrance for job listings using Intersection Observer
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
+                }, index * 150);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.job-card').forEach(card => {
+        observer.observe(card);
+    });
+
+    // Handle file input display
+    const fileInput = document.getElementById('cv-upload');
+    fileInput.addEventListener('change', function() {
+        if (this.files && this.files[0]) {
+            const fileName = this.files[0].name;
+            const p = this.parentElement.querySelector('p.text-sm');
+            p.innerHTML = `File selected: <span class="text-primary font-bold">${fileName}</span>`;
+        }
+    });
+</script>
+
+
+<!-- PREMIUM FRONTEND POLISH INJECTIONS -->
+<style>
+    html { scroll-behavior: smooth; }
+    .premium-hide { opacity: 0; transform: translateY(40px); transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1); }
+    .premium-show { opacity: 1; transform: translateY(0); }
+    #premium-toast { transform: translateY(150%); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+    #premium-toast.show { transform: translateY(0); }
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Premium Scroll Animations (Intersection Observer)
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                entry.target.classList.add('premium-show');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    
+    // Animate all major sections that aren't the intro header
+    document.querySelectorAll('section').forEach((el, index) => {
+        if (index > 0) { // skip the immediate hero section so it doesn't pop in weirdly
+            el.classList.add('premium-hide');
+            observer.observe(el);
+        }
+    });
+
+    // 2. Functional Mobile Menu Overlay
+    const menuBtns = document.querySelectorAll('button.md\\:hidden, button[class*="md:hidden"]');
+    if(menuBtns.length > 0) {
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'fixed inset-0 bg-background-dark/98 backdrop-blur-2xl z-[100] flex flex-col items-center justify-center gap-8 translate-y-[-100%] transition-transform duration-500';
+        mobileMenu.innerHTML = `
+            <button class="absolute top-8 right-8 text-white p-2 hover:text-primary transition-colors" id="close-menu">
+                <span class="material-symbols-outlined text-4xl">close</span>
+            </button>
+            <a href="index.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Home</a>
+            <a href="about.html" class="text-4xl font-black text-white hover:text-primary transition-colors">About</a>
+            <a href="services.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Services</a>
+            <a href="projects.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Projects</a>
+            <a href="contact.html" class="text-4xl font-black text-white hover:text-primary transition-colors">Contact</a>
+            <a href="tel:08119111727" class="mt-8 bg-primary text-background-dark px-8 py-3 rounded-full font-bold shadow-lg">Call Us</a>
+        `;
+        document.body.appendChild(mobileMenu);
+        
+        menuBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-y-[-100%]');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        document.getElementById('close-menu').addEventListener('click', () => {
+            mobileMenu.classList.add('translate-y-[-100%]');
+            document.body.style.overflow = '';
+        });
+    }
+
+    // 3. Premium Contact Form Handling (Toast Notification)
+    // Create Toast Element
+    const toast = document.createElement('div');
+    toast.id = 'premium-toast';
+    toast.className = 'fixed bottom-8 right-8 bg-background-dark text-white px-6 py-4 rounded-xl shadow-2xl border border-primary/30 flex items-center gap-4 z-[100]';
+    toast.innerHTML = `
+        <span class="material-symbols-outlined text-primary text-2xl">check_circle</span>
+        <div>
+            <h4 class="font-bold">Message Sent!</h4>
+            <p class="text-sm text-slate-400">Our team will contact you shortly.</p>
+        </div>
+    `;
+    document.body.appendChild(toast);
+
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+        // override any existing alert implementations
+        form.removeAttribute('onsubmit');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Show toast
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 4000);
+            form.reset();
+        });
+    });
+});
+</script>
+
+</body></html>

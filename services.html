@@ -1,427 +1,183 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Comprehensive construction and contracting services across Nigeria." name="description"/>
-<title>Services | FETZY NIGERIA LIMITED</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
-<script id="tailwind-config">
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Our Services | FETZY NIGERIA LIMITED</title>
+    <meta content="Comprehensive construction, engineering, and logistics services across Nigeria. We deliver excellence from foundation to commissioning." name="description"/>
+    
+    <!-- Scripts & Styles -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+    <link rel="stylesheet" href="shared-styles.css">
+    
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#ba8f2c",
+                        "primary": "#C6A75E",
                         "background-light": "#f8f7f6",
-                        "background-dark": "#1f1b13",
+                        "background-dark": "#0A0A0A",
+                        "graphite": "#1a1a1a",
                     },
                     fontFamily: {
-                        "display": ["Inter"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    animation: {
-                        'fade-up': 'fadeUp 0.6s ease-out forwards',
-                    },
-                    keyframes: {
-                        fadeUp: {
-                            '0%': { opacity: '0', transform: 'translateY(20px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        }
+                        "display": ["Inter", "sans-serif"]
                     }
                 },
             },
         }
     </script>
-<style>
-        .service-card {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .service-card:hover {
-            box-shadow: 0 0 30px -5px rgba(186, 143, 44, 0.3);
-            transform: translateY(-8px);
-        }
-        .stagger-1 { animation-delay: 0.1s; }
-        .stagger-2 { animation-delay: 0.2s; }
-        .stagger-3 { animation-delay: 0.3s; }
-        .stagger-4 { animation-delay: 0.4s; }
-        .stagger-5 { animation-delay: 0.5s; }
-    </style>
-<!-- PREMIUM FRONTEND POLISH INJECTIONS -->
-<style>
-    html { scroll-behavior: smooth; }
-    .premium-hide { opacity: 0; transform: translateY(40px); transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1); }
-    .premium-show { opacity: 1; transform: translateY(0); }
-    #premium-toast { transform: translateY(150%); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
-    #premium-toast.show { transform: translateY(0); }
-</style>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased" data-nav-root="" data-page="services">
-<div class="relative flex min-h-screen flex-col overflow-x-hidden">
-<header id="site-header"></header>
-
-<main class="flex-grow">
-<!-- Hero Section -->
-<section class="relative w-full py-16 sm:py-32 overflow-hidden">
-<div class="absolute inset-0 z-0 bg-cover bg-center opacity-40" data-alt="African civil engineer supervising a construction site in Lagos" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBj_EKUaV_ip85qAhPFmGpYYGaDQ1nBk4XGwr3mpPyh3aWilTbYqDPKhGjNQbXuNapggU1mpWA58w8ZzISe8yt9XvMRKjhXk3VxJJ3uJTNEpKFXFJHVDyC_01tqTYVR6kiEU3AUtH1N3yNBwBTOibOJwIWAyAYB5lghmuOE8zz8Lb0a3NWKW5iz1kFW6pQcL6KZh4_DYFkoMJGHebiUc-Ox8UWsTkk8SwYUsNbCqzXvOP6ccfyMM0dcfToNoCOnaFCZ48Flfdmj4KU')">
-</div>
-<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-transparent"></div>
-<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-<span class="text-primary font-bold tracking-widest uppercase text-xs mb-4 block animate-fade-up">Expertise &amp; Innovation</span>
-<h2 class="text-4xl sm:text-5xl md:text-6xl font-black mb-6 tracking-tight animate-fade-up stagger-1">Our Services</h2>
-<p class="max-w-2xl mx-auto text-slate-300 text-lg leading-relaxed animate-fade-up stagger-2">
-    From foundational engineering to high-rise developments, FETZY NIGERIA LIMITED delivers world-class infrastructure solutions across Africa's most dynamic markets.
-</p>
-</div>
-</section>
-<!-- Services Grid -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20" id="services-overview">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- Building Construction -->
-<div class="service-card opacity-0 animate-fade-up stagger-1 group relative bg-slate-100 dark:bg-slate-900/50 p-8 rounded-xl border border-transparent hover:border-primary/40" id="building-construction">
-<div class="flex items-center justify-between mb-6">
-<span class="material-symbols-outlined text-4xl text-primary">apartment</span>
-<span class="text-slate-400 text-xs font-bold uppercase tracking-widest">01</span>
-</div>
-<h3 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">Building Construction</h3>
-<p class="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
-    Sustainable residential and commercial architecture designed for the future of Nigerian urban centers.
-</p>
-<div class="flex flex-wrap items-center gap-4">
-<a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all" href="#building-construction-details">
-    View details <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-<a class="flex items-center gap-2 text-slate-500 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#services-overview">
-    Back to overview <span class="material-symbols-outlined text-sm">arrow_upward</span>
-</a>
-</div>
-</div>
-<!-- Road Construction -->
-<div class="service-card opacity-0 animate-fade-up stagger-2 group relative bg-slate-100 dark:bg-slate-900/50 p-8 rounded-xl border border-transparent hover:border-primary/40" id="road-construction">
-<div class="flex items-center justify-between mb-6">
-<span class="material-symbols-outlined text-4xl text-primary">engineering</span>
-<span class="text-slate-400 text-xs font-bold uppercase tracking-widest">02</span>
-</div>
-<h3 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">Road Construction</h3>
-<p class="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
-    Enduring road networks and heavy-duty pavement solutions optimized for local climate and heavy logistics.
-</p>
-<div class="flex flex-wrap items-center gap-4">
-<a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all" href="#road-construction-details">
-    View details <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-<a class="flex items-center gap-2 text-slate-500 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#services-overview">
-    Back to overview <span class="material-symbols-outlined text-sm">arrow_upward</span>
-</a>
-</div>
-</div>
-<!-- Real Estate -->
-<div class="service-card opacity-0 animate-fade-up stagger-3 group relative bg-slate-100 dark:bg-slate-900/50 p-8 rounded-xl border border-transparent hover:border-primary/40" id="real-estate">
-<div class="flex items-center justify-between mb-6">
-<span class="material-symbols-outlined text-4xl text-primary">domain</span>
-<span class="text-slate-400 text-xs font-bold uppercase tracking-widest">03</span>
-</div>
-<h3 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">Real Estate</h3>
-<p class="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
-    Strategic property development and high-yield real estate investments in Nigeria's prime locations.
-</p>
-<div class="flex flex-wrap items-center gap-4">
-<a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all" href="#real-estate-development-details">
-    View details <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-<a class="flex items-center gap-2 text-slate-500 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#services-overview">
-    Back to overview <span class="material-symbols-outlined text-sm">arrow_upward</span>
-</a>
-</div>
-</div>
-<!-- Supply of General Goods -->
-<div class="service-card opacity-0 animate-fade-up stagger-4 group relative bg-slate-100 dark:bg-slate-900/50 p-8 rounded-xl border border-transparent hover:border-primary/40" id="procurement-logistics">
-<div class="flex items-center justify-between mb-6">
-<span class="material-symbols-outlined text-4xl text-primary">local_shipping</span>
-<span class="text-slate-400 text-xs font-bold uppercase tracking-widest">04</span>
-</div>
-<h3 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">Procurement &amp; Logistics</h3>
-<p class="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
-    Agile supply chain management for industrial materials and specialized equipment nationwide.
-</p>
-<div class="flex flex-wrap items-center gap-4">
-<a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all" href="#procurement-logistics-details">
-    View details <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-<a class="flex items-center gap-2 text-slate-500 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#services-overview">
-    Back to overview <span class="material-symbols-outlined text-sm">arrow_upward</span>
-</a>
-</div>
-</div>
-<!-- General Contract -->
-<div class="service-card opacity-0 animate-fade-up stagger-5 group relative bg-slate-100 dark:bg-slate-900/50 p-8 rounded-xl border border-transparent hover:border-primary/40 " id="general-contracting">
-<div class="flex items-center justify-between mb-6">
-<span class="material-symbols-outlined text-4xl text-primary">handshake</span>
-<span class="text-slate-400 text-xs font-bold uppercase tracking-widest">05</span>
-</div>
-<h3 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">General Contracting</h3>
-    <p class="text-slate-400 text-sm leading-relaxed flex-grow">
-        Comprehensive project management from conceptualization to commissioning. We bring accountability and technical precision to diverse public and private sector projects.
-    </p>
-<div class="mt-auto flex flex-wrap items-center gap-4">
-<a class="flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all" href="#general-contracting-details">
-        View details <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-<a class="flex items-center gap-2 text-slate-500 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#services-overview">
-        Back to overview <span class="material-symbols-outlined text-sm">arrow_upward</span>
-</a>
-</div>
-</div>
-</div>
-</section>
-<!-- Service Detail Anchors -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20" aria-labelledby="service-detail-heading">
-<div class="max-w-3xl mb-12">
-<span class="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Service Detail Anchors</span>
-<h3 class="text-3xl font-bold mb-4" id="service-detail-heading">Choose the service area you want to explore</h3>
-<p class="text-slate-400 leading-relaxed">Each service card now leads to a matching section on this page so visitors can jump directly to the capability that fits their project.</p>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-<article class="rounded-2xl border border-primary/20 bg-white dark:bg-slate-900/40 p-8 scroll-mt-28" id="building-construction-jump">
-<h4 class="text-2xl font-bold mb-3">Building Construction</h4>
-<p class="text-slate-400 mb-6">We deliver residential, commercial, and mixed-use developments with a focus on durability, sustainability, and efficient site coordination.</p>
-<a class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all" href="#services-overview">Back to services overview <span class="material-symbols-outlined text-sm">arrow_upward</span></a>
-</article>
-<article class="rounded-2xl border border-primary/20 bg-white dark:bg-slate-900/40 p-8 scroll-mt-28" id="road-construction-jump">
-<h4 class="text-2xl font-bold mb-3">Road Construction</h4>
-<p class="text-slate-400 mb-6">Our roadworks teams handle route preparation, drainage integration, pavement systems, and long-life finishing built for heavy transport corridors.</p>
-<a class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all" href="#services-overview">Back to services overview <span class="material-symbols-outlined text-sm">arrow_upward</span></a>
-</article>
-<article class="rounded-2xl border border-primary/20 bg-white dark:bg-slate-900/40 p-8 scroll-mt-28" id="real-estate-development-jump">
-<h4 class="text-2xl font-bold mb-3">Real Estate</h4>
-<p class="text-slate-400 mb-6">From land acquisition strategy to turnkey property development, we help clients unlock value in high-growth residential and commercial markets.</p>
-<a class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all" href="#services-overview">Back to services overview <span class="material-symbols-outlined text-sm">arrow_upward</span></a>
-</article>
-<article class="rounded-2xl border border-primary/20 bg-white dark:bg-slate-900/40 p-8 scroll-mt-28" id="procurement-logistics-jump">
-<h4 class="text-2xl font-bold mb-3">Procurement &amp; Logistics</h4>
-<p class="text-slate-400 mb-6">We coordinate sourcing, supply scheduling, and nationwide delivery for project-critical materials, machinery, and operational support items.</p>
-<a class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all" href="#services-overview">Back to services overview <span class="material-symbols-outlined text-sm">arrow_upward</span></a>
-</article>
-<article class="rounded-2xl border border-primary/20 bg-white dark:bg-slate-900/40 p-8 scroll-mt-28 lg:col-span-2" id="general-contracting-jump">
-<h4 class="text-2xl font-bold mb-3">General Contracting</h4>
-<p class="text-slate-400 mb-6">We provide end-to-end execution oversight, subcontractor coordination, cost control, and quality assurance for public and private infrastructure programs.</p>
-<a class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all" href="contact.html">Contact us about this service <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-</article>
-</div>
-</section>
-<!-- Secondary Image Section -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-<div class="rounded-2xl overflow-hidden h-96 group">
-<img loading="lazy" alt="Skilled African construction team working together" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkF1IdFMPC_DsSyN_n0QO65B2OUiP23_IDC_4oQ8hMYzsWlai7_trEmsYnneI5wQCmwZZiM47FNikWl8jiRaURtAhh1T18L1ZHK3qUtevoVLObuzbXm2Ku7pxZnbHSE3u2ba8VhcBQSs8Wd6WVoPx6ZC2rB7em6oxILgLdwAjHdR3k6ldKe3wVLyQjfpxvXBscb7govb61W-l3kAWrceixczvTLsdGYp1B2d0qAAdNO-GzZU6sTiOPfB6bX9LvfAcEu5J7QCum4Cc"/>
-</div>
-<div class="space-y-6">
-<h3 class="text-3xl font-bold">Built by Experts, Inspired by Nigeria</h3>
-<p class="text-slate-400">Our team of certified engineers and project managers bring local insights and global standards to every brick laid. We are committed to empowering local talent while delivering infrastructure that stands the test of time.</p>
-<div class="flex gap-4">
-<div class="bg-primary/10 p-4 rounded-lg flex-1">
-<span class="text-primary font-bold text-2xl block">150+</span>
-<span class="text-xs uppercase tracking-wider text-slate-400">Projects Completed</span>
-</div>
-<div class="bg-primary/10 p-4 rounded-lg flex-1">
-<span class="text-primary font-bold text-2xl block">12+</span>
-<span class="text-xs uppercase tracking-wider text-slate-400">States Covered</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Service Details -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20" id="service-details">
-<div class="mb-10 text-center">
-<span class="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Service Breakdown</span>
-<h3 class="text-3xl md:text-4xl font-black mb-4">What each team delivers</h3>
-<p class="max-w-3xl mx-auto text-slate-400">Explore the operating model behind each FETZY service line, from concept planning through handover and long-term asset support.</p>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-<article class="rounded-2xl border border-primary/20 bg-slate-100 dark:bg-slate-900/50 p-8" id="building-construction-details">
-<h4 class="text-2xl font-bold mb-4">Building Construction</h4>
-<p class="text-slate-400 mb-4">We design and deliver residential, commercial, and mixed-use buildings with a focus on lifecycle durability, safety compliance, and modern site coordination.</p>
-<ul class="space-y-3 text-sm text-slate-400">
-<li>Pre-construction planning, value engineering, and phased delivery.</li>
-<li>Concrete, steel, MEP, and finishing packages managed under one team.</li>
-<li>Handover documentation tailored for owners, operators, and regulators.</li>
-</ul>
-</article>
-<article class="rounded-2xl border border-primary/20 bg-slate-100 dark:bg-slate-900/50 p-8" id="road-construction-details">
-<h4 class="text-2xl font-bold mb-4">Road Construction</h4>
-<p class="text-slate-400 mb-4">Our road teams execute corridors, access routes, drainage systems, and pavement works engineered for heavy use, seasonal rainfall, and long-term maintainability.</p>
-<ul class="space-y-3 text-sm text-slate-400">
-<li>Route studies, drainage strategy, and pavement design support.</li>
-<li>Earthworks, asphalt, concrete, and traffic management delivery.</li>
-<li>Quality assurance programs that match public and private infrastructure needs.</li>
-</ul>
-</article>
-<article class="rounded-2xl border border-primary/20 bg-slate-100 dark:bg-slate-900/50 p-8" id="real-estate-development-details">
-<h4 class="text-2xl font-bold mb-4">Real Estate Development</h4>
-<p class="text-slate-400 mb-4">FETZY structures property developments around commercial viability, planning approvals, and buildability so projects move efficiently from land strategy to occupancy.</p>
-<ul class="space-y-3 text-sm text-slate-400">
-<li>Site appraisal, feasibility modeling, and development planning.</li>
-<li>Execution oversight for residential, office, and investment-led assets.</li>
-<li>Delivery coordination with consultants, partners, and future operators.</li>
-</ul>
-</article>
-<article class="rounded-2xl border border-primary/20 bg-slate-100 dark:bg-slate-900/50 p-8" id="procurement-logistics-details">
-<h4 class="text-2xl font-bold mb-4">Procurement &amp; Logistics</h4>
-<p class="text-slate-400 mb-4">We source and move construction materials, plant, and specialized equipment through controlled procurement workflows that reduce delays and protect project budgets.</p>
-<ul class="space-y-3 text-sm text-slate-400">
-<li>Vendor qualification, sourcing strategy, and documentation control.</li>
-<li>Inbound delivery planning aligned with construction sequencing.</li>
-<li>Transparent coordination for mission-critical materials and equipment.</li>
-</ul>
-</article>
-<article class="rounded-2xl border border-primary/20 bg-slate-100 dark:bg-slate-900/50 p-8 lg:col-span-2" id="general-contracting-details">
-<h4 class="text-2xl font-bold mb-4">General Contracting</h4>
-<p class="text-slate-400 mb-4">Our general contracting team integrates consultants, specialist trades, and client decision-makers under one delivery structure to maintain quality, cost, and schedule accountability.</p>
-<ul class="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm text-slate-400">
-<li>Single-point coordination across multi-discipline scopes.</li>
-<li>Commercial controls, site supervision, and progress reporting.</li>
-<li>Commissioning and closeout processes built for repeatable performance.</li>
-</ul>
-</article>
-</div>
-</section>
-
-<!-- CTA Section -->
-<section class="bg-primary/10 py-16 border-y border-primary/20">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-<h2 class="text-3xl font-bold mb-4">Ready to start your next project?</h2>
-<p class="text-slate-400 mb-8 max-w-xl mx-auto">Contact our team today to discuss how we can help bring your unique project vision to life with Nigerian excellence.</p>
-<a class="inline-block bg-primary text-background-dark px-8 py-3 rounded-lg font-bold hover:scale-105 transition-transform mt-auto" href="contact.html">
-    Contact Us Today
-</a>
-</div>
-</section>
-</main>
-<footer class="bg-background-dark border-t border-slate-800 py-12">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-<div class="col-span-1 md:col-span-1">
-<div class="flex items-center gap-3 mb-6">
-<div class="text-primary">
-<svg class="w-6 h-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
-</svg>
-</div>
-<h2 class="text-md font-bold uppercase">FETZY NIGERIA LIMITED</h2>
-</div>
-<p class="text-slate-400 text-sm">Delivering excellence in engineering and construction across the Nigerian landscape since inception.</p>
-</div>
-<div>
-<h3 class="text-sm font-bold text-white uppercase mb-6">Services</h3>
-<ul class="space-y-3 text-sm text-slate-400">
-<li><a class="hover:text-primary transition-colors" href="#building-construction-details">Building Construction</a></li>
-<li><a class="hover:text-primary transition-colors" href="#road-construction-details">Road Infrastructure</a></li>
-<li><a class="hover:text-primary transition-colors" href="#real-estate-development-details">Real Estate Development</a></li>
-<li><a class="hover:text-primary transition-colors" href="#procurement-logistics-details">Procurement Services</a></li>
-</ul>
-</div>
-<div>
-<h3 class="text-sm font-bold text-white uppercase mb-6">Company</h3>
-<ul class="space-y-3 text-sm text-slate-400">
-<li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
-<li><a class="hover:text-primary transition-colors" href="projects.html">Our Projects</a></li>
-<li><a class="hover:text-primary transition-colors" href="partners.html">Partnerships</a></li>
-<li><a class="hover:text-primary transition-colors" href="partnerships.html">Partnerships</a></li>
-<li><a class="hover:text-primary transition-colors" href="careers.html">Careers</a></li>
-</ul>
-</div>
-<div>
-<h3 class="text-sm font-bold text-white uppercase mb-6">Contact</h3>
-<ul class="space-y-3 text-sm text-slate-400">
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-primary text-base">location_on</span>
-<span>Suite 209B, Samfa Plaza, Ndola Crescent, Wuse Zone 5, Abuja, FCT, Nigeria.</span>
-</li>
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-base">mail</span>
-<span>info@fetzynigeria.org</span>
-</li>
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-base">phone</span>
-<span>08119111727</span>
-<span>+234-8119111728</span>
-<span>+234 707 777 6125</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="text-slate-400 text-xs text-center md:text-left">© 2024 FETZY NIGERIA LIMITED. All rights reserved.</p>
-<div class="flex gap-6">
-<a class="text-slate-400 hover:text-primary transition-colors" href="index.html">
-<span class="sr-only">LinkedIn</span>
-<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
-</a>
-</div>
-</div>
-</div>
-</footer>
-</div>
-
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    // 1. Premium Scroll Animations (Intersection Observer)
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting) {
-                entry.target.classList.add('premium-show');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+<body data-page="services" class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display selection:bg-primary selection:text-background-dark overflow-x-hidden">
     
-    // Animate all major sections that aren't the intro header
-    document.querySelectorAll('section').forEach((el, index) => {
-        if (index > 0) { // skip the immediate hero section so it doesn't pop in weirdly
-            el.classList.add('premium-hide');
-            observer.observe(el);
-        }
-    });
+    <header id="site-header"></header>
 
-    // 3. Premium Contact Form Handling (Toast Notification)
-    // Create Toast Element
-    const toast = document.createElement('div');
-    toast.id = 'premium-toast';
-    toast.className = 'fixed bottom-8 right-8 bg-background-dark text-white px-6 py-4 rounded-xl shadow-2xl border border-primary/30 flex items-center gap-4 z-[100]';
-    toast.innerHTML = `
-        <span class="material-symbols-outlined text-primary text-2xl">check_circle</span>
-        <div>
-            <h4 class="font-bold">Message Sent!</h4>
-            <p class="text-sm text-slate-400">Our team will contact you shortly.</p>
-        </div>
-    `;
-    document.body.appendChild(toast);
+    <main>
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-24 bg-background-dark border-b border-white/5 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="max-w-3xl">
+                    <span class="inline-block px-3 py-1 bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-widest rounded-lg mb-6 animate-reveal">Engineering Excellence</span>
+                    <h1 class="text-5xl md:text-8xl font-black tracking-tighter text-white mb-8 animate-reveal stagger-1">
+                        Technical <span class="text-primary italic">Solutions.</span>
+                    </h1>
+                    <p class="text-lg text-slate-400 font-light leading-relaxed animate-reveal stagger-2">
+                        From foundational civil engineering to high-rise commercial developments, Fetzy Nigeria Limited delivers world-class infrastructure through precision and local insight.
+                    </p>
+                </div>
+            </div>
+            <!-- Background element -->
+            <div class="absolute right-0 top-0 w-1/2 h-full bg-primary/5 -skew-x-12 translate-x-1/2"></div>
+        </section>
 
-    const forms = document.querySelectorAll('form');
-    forms.forEach(form => {
-        // override any existing alert implementations
-        form.removeAttribute('onsubmit');
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            // Show toast
-            toast.classList.add('show');
-            setTimeout(() => toast.classList.remove('show'), 4000);
-            form.reset();
-        });
-    });
-});
-</script>
+        <!-- Services Grid -->
+        <section class="py-32 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <!-- Building Construction -->
+                    <div class="bg-graphite p-12 rounded-[2.5rem] border border-white/5 hover:border-primary/20 transition-all reveal group" id="building-construction">
+                        <div class="flex items-center justify-between mb-10">
+                            <span class="material-symbols-outlined text-primary text-5xl">apartment</span>
+                            <span class="text-[10px] font-black text-slate-600 uppercase tracking-widest">01</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-white mb-6 group-hover:text-primary transition-colors">Building Construction</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-8">Implementing sustainable architectural designs for Nigerian urban centers, from residential estates to corporate skyscrapers.</p>
+                        <ul class="space-y-3 text-xs font-bold text-slate-400">
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Residential Developments</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Commercial Complexes</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Institutional Infrastructure</li>
+                        </ul>
+                    </div>
 
+                    <!-- Road Construction -->
+                    <div class="bg-graphite p-12 rounded-[2.5rem] border border-white/5 hover:border-primary/20 transition-all reveal stagger-1 group" id="road-construction">
+                        <div class="flex items-center justify-between mb-10">
+                            <span class="material-symbols-outlined text-primary text-5xl">engineering</span>
+                            <span class="text-[10px] font-black text-slate-600 uppercase tracking-widest">02</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-white mb-6 group-hover:text-primary transition-colors">Road Construction</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-8">Pioneering enduring road networks and heavy-duty pavement solutions optimized for the Nigerian climate. </p>
+                        <ul class="space-y-3 text-xs font-bold text-slate-400">
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Interstate Highways</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Urban Pavement Systems</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Drainage & Civil Works</li>
+                        </ul>
+                    </div>
 
+                    <!-- Real Estate -->
+                    <div class="bg-graphite p-12 rounded-[2.5rem] border border-white/5 hover:border-primary/20 transition-all reveal stagger-2 group" id="real-estate">
+                        <div class="flex items-center justify-between mb-10">
+                            <span class="material-symbols-outlined text-primary text-5xl">domain</span>
+                            <span class="text-[10px] font-black text-slate-600 uppercase tracking-widest">03</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-white mb-6 group-hover:text-primary transition-colors">Real Estate</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-8">Strategic property development and lifecycle asset management in West Africa's most prime locations.</p>
+                        <ul class="space-y-3 text-xs font-bold text-slate-400">
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Site Acquisition</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Feasibility Modeling</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Asset Optimization</li>
+                        </ul>
+                    </div>
 
-  <script src="shared-navbar.js"></script>
-</body></html>
+                    <!-- Logistics -->
+                    <div class="bg-graphite p-12 rounded-[2.5rem] border border-white/5 hover:border-primary/20 transition-all reveal group">
+                        <div class="flex items-center justify-between mb-10">
+                            <span class="material-symbols-outlined text-primary text-5xl">local_shipping</span>
+                            <span class="text-[10px] font-black text-slate-600 uppercase tracking-widest">04</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-white mb-6 group-hover:text-primary transition-colors">Procurement</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-8">Coordinating mission-critical industrial supply chains for machinery and construction materials nationwide.</p>
+                         <ul class="space-y-3 text-xs font-bold text-slate-400">
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Equipment Sourcing</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Material Logistics</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Vendor Oversight</li>
+                        </ul>
+                    </div>
+
+                    <!-- Contracting -->
+                    <div class="bg-graphite p-12 rounded-[2.5rem] border border-white/5 hover:border-primary/20 transition-all reveal stagger-1 group">
+                        <div class="flex items-center justify-between mb-10">
+                            <span class="material-symbols-outlined text-primary text-5xl">handshake</span>
+                            <span class="text-[10px] font-black text-slate-600 uppercase tracking-widest">05</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-white mb-6 group-hover:text-primary transition-colors">General Contracting</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-8">End-to-end project oversight, bringing accountability and engineering precision to complex public-private partnerships.</p>
+                        <ul class="space-y-3 text-xs font-bold text-slate-400">
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Project Management</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Cost Control</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Quality Assurance</li>
+                        </ul>
+                    </div>
+
+                    <!-- CTA Item -->
+                    <div class="bg-primary p-12 rounded-[2.5rem] flex flex-col justify-center reveal stagger-2">
+                        <h3 class="text-3xl font-black text-background-dark mb-6">Need a custom technical plan?</h3>
+                        <p class="text-background-dark/70 text-sm font-bold mb-10">Our engineering desk provides tailored consultations for large-scale developments.</p>
+                        <a href="consultation.html" class="inline-flex items-center gap-3 bg-background-dark text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:scale-105 transition-all">
+                            Book Session <span class="material-symbols-outlined text-sm">arrow_outward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- detailed Capabilities Section -->
+        <section class="py-32 bg-primary/5 px-6 border-y border-white/5 reveal">
+             <div class="max-w-7xl mx-auto">
+                 <div class="grid lg:grid-cols-2 gap-20 items-center">
+                     <div class="rounded-[2.5rem] overflow-hidden border border-white/10 group">
+                         <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj_EKUaV_ip85qAhPFmGpYYGaDQ1nBk4XGwr3mpPyh3aWilTbYqDPKhGjNQbXuNapggU1mpWA58w8ZzISe8yt9XvMRKjhXk3VxJJ3uJTNEpKFXFJHVDyC_01tqTYVR6kiEU3AUtH1N3yNBwBTOibOJwIWAyAYB5lghmuOE8zz8Lb0a3NWKW5iz1kFW6pQcL6KZh4_DYFkoMJGHebiUc-Ox8UWsTkk8SwYUsNbCqzXvOP6ccfyMM0dcfToNoCOnaFCZ48Flfdmj4KU" alt="Technical Precision" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                     </div>
+                     <div>
+                         <h2 class="text-3xl md:text-5xl font-black text-white mb-8 leading-tight">National Reach. <br><span class="text-primary italic">Global Standards.</span></h2>
+                         <p class="text-slate-400 text-lg font-light leading-relaxed mb-10">Our operating model integrates global engineering best practices with deep local intelligence. We maintain a fleet of modern machinery and a network of specialist subcontractors ensuring every metric of your project plan is met with absolute structural integrity.</p>
+                         <div class="grid grid-cols-2 gap-8 mb-12">
+                             <div>
+                                 <p class="text-4xl font-black text-white mb-2">150+</p>
+                                 <p class="text-[10px] font-black uppercase tracking-widest text-primary">Delivered Assets</p>
+                             </div>
+                             <div>
+                                 <p class="text-4xl font-black text-white mb-2">12</p>
+                                 <p class="text-[10px] font-black uppercase tracking-widest text-primary">Regional Nodes</p>
+                             </div>
+                         </div>
+                         <a href="projects.html" class="inline-flex items-center gap-3 text-white font-black text-xs uppercase tracking-widest hover:text-primary transition-colors">
+                             View Deployment Portfolio <span class="material-symbols-outlined text-sm">chevron_right</span>
+                         </a>
+                     </div>
+                 </div>
+             </div>
+        </section>
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <!-- Shared Scripts -->
+    <script src="shared-navbar.js"></script>
+    <script src="shared-footer.js"></script>
+    <script src="shared-init.js"></script>
+</body>
+</html>
